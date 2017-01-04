@@ -1,16 +1,45 @@
 extends _layout
 block content
-	main.main-content
-		.sprite-example
-			h2.heading Sprite example
-			i.facebook-logo__icon
-			i.google-plus-logo__icon
-			i.instagram-logo__icon
-			i.twitter-logo__icon
-			i.youtube-logo__icon
-		.author-git
-			h2 Github link
-			a(href="https://github.com/narek-t/gulp-jade-sass" target="_blank") https://github.com/narek-t/gulp-jade-sass
+	section.promo.ie-extra-wrapper
+		.promo__inner
+			a.promo__logo(href="#")
+				img(src="img/logo.png", alt="")
+			nav.promo__menu
+				a.promo__menu-link(href="#") Services
+				a.promo__menu-link(href="#") Portfolio
+				a.promo__menu-link(href="#") About Us
+				a.promo__menu-link(href="#") TeamTeam
+				a.promo__menu-link(href="#") Contact us
+			.promo__hello
+				h1.promo__title Take your <span>Online</span><br><span>business to</span> the<br>next <span>level</span>
+				p.promo__subtitle Conversion Driven Design
+					span.delimiter I
+					| Custom Functionality
+					span.delimiter I
+					| Explosive Marketing
+			.promo__tabs
+				.promo__tab
+					span Web Development
+				.promo__tab.active-tab
+					span Responsive Web-sites
+				.promo__tab
+					span Graphic Design
+				.promo__tab
+					span Digital Marketing
+				.promo__tab
+					span Mobile App
+	section.tabs
+		.tab.cf
+			.container
+				h2.tab__title We develop modern & quality products, like....
+				p.tab__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				ul.tabs__list.cf
+					li.tabs__list-item.tabs__list-item--fourth
+						
+
+
+
+
 
 
 

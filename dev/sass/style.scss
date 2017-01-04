@@ -2,63 +2,186 @@
 @import "_variables.scss";
 @import "_sprite.scss";
 
-html {
-	font-size: 16px;
-	height: 100%;
+.container {
+	max-width: 1500px;
+	margin: auto;
+	padding: 0 15px;
 }
 
-body {
-	background: $bgColor;
-	font-family: $fontFamily;
-	color: $mainColor;
-	min-height: 100%;
-	margin: 0;
+.ie-extra-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.promo__inner {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	background: url(../img/top-bg.jpg) top center no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: relative;
 }
 
-.all-wrapper {
-	flex: 1;
+.promo__logo {
+	position: absolute;
+	left: 60px;
+	top: 50px;
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		transition: $transition;
+	}
+	&:hover {
+		img {
+			opacity: .8;
+		}
+	}
 }
 
-h1 {
+.promo__tabs {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.promo__tab {
+	width: 20%;
 	text-align: center;
-	margin: 50px auto 30px;
-	font-size: 2.5rem;
+	background: #252525;
+	min-height: 155px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #323232;
+	cursor: pointer;
+	transition: $transition;
+	&:hover,
+	&.active-tab {
+		background: #ebebeb;
+		span {
+			color: #252525;
+		}
+	}
+	span {
+		display: block;
+		padding: 0 15px;
+		color: #e6e6e6;
+		font: 300 20px $mont;
+	}
 }
 
-a {
-	color: $linkColor;
-}
-
-.sprite-example {
-	text-align: center;
-	i {
+.promo__menu {
+	position: absolute;
+	top: 96px;
+	right: 110px;
+	&-link {
+		color: #fff;
+		font: 300 12px $mont;
+		text-transform: uppercase;
+		text-decoration: none;
 		display: inline-block;
-		margin: 0 10px;
-	}
-	.facebook-logo__icon {
-		@include sprite($facebook-logo-icon);
-	}
-	.google-plus-logo__icon {
-		@include sprite($google-plus-logo-icon);
-	}
-	.instagram-logo__icon {
-		@include sprite($instagram-logo-icon);
-	}
-	.twitter-logo__icon {
-		@include sprite($twitter-logo-icon);
-	}
-	.youtube-logo__icon {
-		@include sprite($youtube-logo-icon);
+		margin-left: 30px;
+		transition: $transition;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
-.author-git {
-	text-align: center;
+.promo__hello {
+	margin: auto;
+	text-align: right;
+	width: 100%;
+	padding-right: 160px;
 }
 
-.site-footer {
-	text-align: center;
-	padding: 20px 0;
+.promo__title {
+	font: 900 95px/75px $mont;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: -0.077em;
+	margin: 0;
+	word-spacing: -7px;
+	span {
+		color: #e97b60;
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 68px;
+		width: 68px;
+		background: url(../img/title-arr.png) left center no-repeat #e97b60;
+		margin-left: 12px;
+	}
 }
+
+.promo__subtitle {
+	margin: 90px 0 0;
+	font: 400 20px $mont;
+	color: #fff;
+	.delimiter {
+		margin: 0 15px;
+	}
+}
+
+.tabs {
+	background: url(../img/tabs-bg.png) right center no-repeat #efefef;
+	padding: 120px 0;
+}
+
+.tab__title {
+	font: 300 30px $mont;
+	color: #363636;
+	margin: 0 0 30px;
+}
+
+.tab__subtitle {
+	font: 16px $hind;
+	color: #808080;
+	max-width: 70%;
+}
+
+.tabs__list {
+	margin: 90px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.tabs__list-item {
+	float: left;
+	display: block;
+	height: 30px;
+	background: red;
+}
+
+.tabs__list-item--fourth {
+	width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
