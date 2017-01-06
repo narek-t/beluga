@@ -75,3 +75,23 @@ $transition: all .3s ease-in-out;
         color: #fff;
     }
 }
+
+.btn--colored {
+    color: #fff;
+    border-color: #e97b60;
+    background: #e97b60;
+    &:hover {
+        background: #000;
+        border-color: #000;
+    }
+}
+
+.btn--black {
+    color: #fff;
+    border-color: #000;
+    background: #000;
+    &:hover {
+        background: #e97b60;
+        border-color: #e97b60;
+    }
+}

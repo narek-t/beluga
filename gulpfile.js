@@ -22,6 +22,7 @@ const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
 const JadeInheritance = require('jade-inheritance');
 const changed = require('gulp-changed');
+const gcmq = require('gulp-group-css-media-queries');
 
 //uncomment this if you want imagemin
 // const imagemin = require('gulp-imagemin');
@@ -51,6 +52,7 @@ gulp.task('styles', function() {
 		}))
 		.pipe(sourcemaps.init())
 		.pipe(sass())
+		.pipe(gcmq())
 		.pipe(postcss([ 
 			autoprefixer({ 
 				browsers: ['last 5 versions', 'ie 8', 'ie 9', '> 1%'],
