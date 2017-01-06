@@ -50,7 +50,7 @@ block content
 						.tab__development-img
 							img(src="img/landing.png", alt="")
 						p.tab__development-title Landing Pages
-						a.btn.btn--transparent(href="#") Read more
+						a.btn.btn--transparent#foo(href="#") Read more
 
 					li.tab__development.tabs__list-item.tabs__list-item--fourth
 						.tab__development-img
@@ -209,7 +209,7 @@ block content
 	section.scrollblock.awards
 		.container
 			h2.awards__title Award Winning Top Reviewed Company
-			.awards__list
+			.awards__list(data-0-bottom-top="transform: translateX(-100%)" data--30p-bottom-top="transform: translateX(0%)" data--50p-bottom-top="transform: translateX(0%)" data--100p-bottom-top="transform: translateX(100%)")
 				a.awards__list-item(href="#")
 					img(src="img/10-best-design-logo.png", alt="")
 				a.awards__list-item(href="#")
@@ -224,44 +224,41 @@ block content
 		h2.portfolio__title
 			span PORTFOLIO
 		p.portfolio__subtitle We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
-		.portfolio__list.cf
+		.portfolio__list.cf.animatedParent
 			.portfolio__col
-				.portfolio__item(style="background-color: #272a2d")
+				.portfolio__item.animated.fadeInUp(style="background-color: #272a2d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port1.jpg", alt="")
-				.portfolio__item(style="background-color: #e24242")
+				.portfolio__item.animated.fadeInUp(style="background-color: #e24242")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port2.jpg", alt="")
 			.portfolio__col
-				.portfolio__item(style="background-color: #f7941d")
+				.portfolio__item.animated.fadeInUp(style="background-color: #f7941d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port3.jpg", alt="")
-				.portfolio__item(style="background-color: #2e529d")
+				.portfolio__item.animated.fadeInUp(style="background-color: #2e529d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port4.jpg", alt="")
-
-
-
 			.portfolio__col
-				.portfolio__item(style="background-color: #f26c4f")
+				.portfolio__item.animated.fadeInUp(style="background-color: #f26c4f")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port2.jpg", alt="")
-				.portfolio__item(style="background-color: #272a2d")
+				.portfolio__item.animated.fadeInUp(style="background-color: #272a2d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port1.jpg", alt="")
 
 			.portfolio__col
-				.portfolio__item(style="background-color: #d8eff5")
+				.portfolio__item.animated.fadeInUp(style="background-color: #d8eff5")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port3.jpg", alt="")
-				.portfolio__item(style="background-color: #9352c1")
+				.portfolio__item.animated.fadeInUp(style="background-color: #9352c1")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port4.jpg", alt="")
