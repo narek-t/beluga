@@ -4,7 +4,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Hind:300,700")
+		//- link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Hind:300,700")
 		link(rel="stylesheet", href="css/style.min.css")
 		title Document
 	
@@ -186,17 +186,23 @@ html(lang="en")
 			        ]
 			    }
 			]
+			var responsivePosition;
+			if($(window).width() > 670) {
+				responsivePosition = "40.7446271,-73.99399569999997".split(',');
+			}else {
+				responsivePosition = "40.7446271,-73.98771569999997".split(',');
+			}
 			function initMap() {
 				map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 16,
-					center: new google.maps.LatLng(59.32522, 18.06502),
+					center: new google.maps.LatLng(responsivePosition[0], responsivePosition[1]),
 					scrollwheel: false,
 					styles: styles,
 					disableDefaultUI: true
 				});
 				marker = new google.maps.Marker({
 					map: map,
-					position: new google.maps.LatLng(59.32522, 18.07002),
+					position: new google.maps.LatLng(40.7446271, -73.98771569999997),
 					icon: 'img/pin.png'
 				});
 				google.maps.event.addDomListener(window, "resize", function() {

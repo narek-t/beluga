@@ -4,20 +4,25 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind:300,700"/>
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>Document</title>
   </head>
   <body>
     <div class="all-wrapper">
+      <div class="main-menu__wrapper">
+        <div class="main-menu__inner cf">
+          <div class="main-menu__control"><a href="#" class="main-menu__close"><span></span><span></span><span></span></a></div><img src="img/menu-logo.png" alt="" class="menu__logo"/>
+          <nav class="main__nav"><a href="#services" class="main__nav-item js--scrollto__link">Services</a><a href="#portfolio" class="main__nav-item js--scrollto__link">portfolio</a><a href="#about" class="main__nav-item js--scrollto__link">About Us</a><a href="#team" class="main__nav-item js--scrollto__link">Team</a><a href="#contacts" class="main__nav-item js--scrollto__link">Contact us</a></nav>
+        </div>
+      </div>
       <section class="scrollblock promo ie-extra-wrapper">
         <div class="promo__inner"><a href="#" class="promo__logo"><img src="img/logo.png" alt=""/></a>
-          <nav class="promo__menu"><a href="#" class="promo__menu-link">Services</a><a href="#" class="promo__menu-link">Portfolio</a><a href="#" class="promo__menu-link">About Us</a><a href="#" class="promo__menu-link">TeamTeam</a><a href="#" class="promo__menu-link">Contact us</a></nav>
+          <nav class="promo__menu"><a href="#services" class="promo__menu-link js--scrollto__link">Services</a><a href="#portfolio" class="promo__menu-link js--scrollto__link">Portfolio</a><a href="#about" class="promo__menu-link js--scrollto__link">About Us</a><a href="#team" class="promo__menu-link js--scrollto__link">Team</a><a href="#contacts" class="promo__menu-link js--scrollto__link">Contact us</a></nav>
           <div class="promo__hello">
             <h1 class="promo__title">Take your <span>Online</span><br><span>business to</span> the<br>next <span>level</span></h1>
             <p class="promo__subtitle">Conversion Driven Design<span class="delimiter">I</span>Custom Functionality<span class="delimiter">I</span>Explosive Marketing</p>
           </div>
-          <div class="promo__tabs">
+          <div id="services" class="promo__tabs">
             <div class="promo__tab active-tab"><span>Web Development</span></div>
             <div class="promo__tab"><span>Responsive Web-sites</span></div>
             <div class="promo__tab"><span>Graphic Design</span></div>
@@ -274,7 +279,7 @@
           <div data-0-bottom-top="transform: translateX(-100%)" data--30p-bottom-top="transform: translateX(0%)" data--50p-bottom-top="transform: translateX(0%)" data--100p-bottom-top="transform: translateX(100%)" class="awards__list"><a href="#" class="awards__list-item"><img src="img/10-best-design-logo.png" alt=""/></a><a href="#" class="awards__list-item"><img src="img/Google.png" alt=""/></a><a href="#" class="awards__list-item"><img src="img/Yelp_Logo.png" alt=""/></a><a href="#" class="awards__list-item"><img src="img/upwork-logo.png" alt=""/></a><a href="#" class="awards__list-item"><img src="img/UpCity_Logo.png" alt=""/></a></div>
         </div>
       </section>
-      <section class="scrollblock portfolio">
+      <section id="portfolio" class="scrollblock portfolio">
         <h2 class="portfolio__title"><span>PORTFOLIO</span></h2>
         <p class="portfolio__subtitle">We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing</p>
         <div class="portfolio__list cf animatedParent">
@@ -347,7 +352,7 @@
           </div>
         </div>
       </section>
-      <section class="why">
+      <section id="about" class="why">
         <div class="container">
           <h2 class="why-title">So Why Work with Us?</h2>
           <ul class="why__list cf">
@@ -396,7 +401,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section id="team" class="team">
         <div class="container">
           <h2 class="team-title">OUR TEAM</h2>
           <div class="team__list">
@@ -599,8 +604,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
-        <div id="map" class="contacts__map"></div>
+      <section id="contacts" class="contacts">
         <div class="container">
           <div class="contacts__inner"><img src="img/footer-logo.png" alt="" class="footer-logo"/>
             <h2 class="contacts__title">CONTACT US</h2>
@@ -621,6 +625,7 @@
             </form>
           </div>
         </div>
+        <div id="map" class="contacts__map"></div>
       </section>
       <section class="footer cf">
         <ul class="social cf">
@@ -806,17 +811,23 @@
               ]
           }
       ]
+      var responsivePosition;
+      if($(window).width() > 670) {
+      	responsivePosition = "40.7446271,-73.99399569999997".split(',');
+      }else {
+      	responsivePosition = "40.7446271,-73.98771569999997".split(',');
+      }
       function initMap() {
       	map = new google.maps.Map(document.getElementById('map'), {
       		zoom: 16,
-      		center: new google.maps.LatLng(59.32522, 18.06502),
+      		center: new google.maps.LatLng(responsivePosition[0], responsivePosition[1]),
       		scrollwheel: false,
       		styles: styles,
       		disableDefaultUI: true
       	});
       	marker = new google.maps.Marker({
       		map: map,
-      		position: new google.maps.LatLng(59.32522, 18.07002),
+      		position: new google.maps.LatLng(40.7446271, -73.98771569999997),
       		icon: 'img/pin.png'
       	});
       	google.maps.event.addDomListener(window, "resize", function() {

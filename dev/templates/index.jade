@@ -1,15 +1,29 @@
 extends _layout
 block content
+	.main-menu__wrapper
+		.main-menu__inner.cf
+			.main-menu__control
+				a.main-menu__close(href="#")
+					span
+					span
+					span
+			img.menu__logo(src="img/menu-logo.png", alt="")
+			nav.main__nav
+				a.main__nav-item.js--scrollto__link(href="#services") Services
+				a.main__nav-item.js--scrollto__link(href="#portfolio") portfolio
+				a.main__nav-item.js--scrollto__link(href="#about") About Us
+				a.main__nav-item.js--scrollto__link(href="#team") Team
+				a.main__nav-item.js--scrollto__link(href="#contacts") Contact us
 	section.scrollblock.promo.ie-extra-wrapper
 		.promo__inner
 			a.promo__logo(href="#")
 				img(src="img/logo.png", alt="")
 			nav.promo__menu
-				a.promo__menu-link(href="#") Services
-				a.promo__menu-link(href="#") Portfolio
-				a.promo__menu-link(href="#") About Us
-				a.promo__menu-link(href="#") TeamTeam
-				a.promo__menu-link(href="#") Contact us
+				a.promo__menu-link.js--scrollto__link(href="#services") Services
+				a.promo__menu-link.js--scrollto__link(href="#portfolio") Portfolio
+				a.promo__menu-link.js--scrollto__link(href="#about") About Us
+				a.promo__menu-link.js--scrollto__link(href="#team") Team
+				a.promo__menu-link.js--scrollto__link(href="#contacts") Contact us
 			.promo__hello
 				h1.promo__title Take your <span>Online</span><br><span>business to</span> the<br>next <span>level</span>
 				p.promo__subtitle Conversion Driven Design
@@ -17,7 +31,7 @@ block content
 					| Custom Functionality
 					span.delimiter I
 					| Explosive Marketing
-			.promo__tabs
+			.promo__tabs#services
 				.promo__tab.active-tab
 					span Web Development
 				.promo__tab
@@ -220,7 +234,7 @@ block content
 					img(src="img/upwork-logo.png", alt="")
 				a.awards__list-item(href="#")
 					img(src="img/UpCity_Logo.png", alt="")
-	section.scrollblock.portfolio
+	section#portfolio.scrollblock.portfolio
 		h2.portfolio__title
 			span PORTFOLIO
 		p.portfolio__subtitle We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
@@ -296,7 +310,7 @@ block content
 					li.services__list-item.icon-arrow Is it optimized to load fast for better user experience?
 					li.services__list-item.icon-arrow Is it cross browser and cross platform compatible so you don't miss any potential customers?
 				a.btn.btn--black(href="#") Read more
-	section.why
+	section#about.why
 		.container
 			h2.why-title So Why Work with Us?
 			ul.why__list.cf
@@ -330,7 +344,7 @@ block content
 					.why__list-content
 						p.why__list-title Strong team... 
 						p.why__list-description ...of 35 world-class experts ready to make your every wish come true (Whether you want us to always be there for you OR disappear after one awe-inspiring project - We will obey you, master)
-	section.team
+	section#team.team
 		.container
 			h2.team-title OUR TEAM
 			.team__list
@@ -512,8 +526,8 @@ block content
 						img(src="img/reviewer4.jpg", alt="")
 					p.reviewer-name 3Software Platform, Bob Y
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni.
-	section.contacts
-		.contacts__map#map
+	section#contacts.contacts
+		
 		.container
 			.contacts__inner
 				img.footer-logo(src="img/footer-logo.png", alt="")
@@ -532,6 +546,7 @@ block content
 						textarea.contacts__form-input.contacts__form-message(placeholder="Message")
 						span.animated-border
 					button.btn--black.btn.send-btn Send
+		.contacts__map#map
 	section.footer.cf
 		ul.social.cf
 			li.social-item.fb

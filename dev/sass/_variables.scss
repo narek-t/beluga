@@ -1,4 +1,4 @@
-$hind: 'Hind';
+$hind: 'hind';
 $mont: 'mont';
 $transition: all .3s ease-in-out;
 @font-face {
@@ -48,6 +48,20 @@ $transition: all .3s ease-in-out;
     src: url('../fonts/montserrat-thin-webfont.woff2') format('woff2'),
          url('../fonts/montserrat-thin-webfont.woff') format('woff');
     font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hind';
+    src: url('../fonts/hind-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hind-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hind';
+    src: url('../fonts/hind-light-webfont.woff2') format('woff2'),
+         url('../fonts/hind-light-webfont.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
 
