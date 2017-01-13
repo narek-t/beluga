@@ -16,17 +16,22 @@ block content
 				a.main__nav-item.js--scrollto__link(href="#contacts") Contact us
 	section.scrollblock.promo.ie-extra-wrapper
 		.promo__inner
-			a.promo__logo(href="#")
+			a.promo__logo.animated(href="#")
 				img(src="img/logo.png", alt="")
-			nav.promo__menu
+			nav.promo__menu.animated
 				a.promo__menu-link.js--scrollto__link(href="#services") Services
 				a.promo__menu-link.js--scrollto__link(href="#portfolio") Portfolio
 				a.promo__menu-link.js--scrollto__link(href="#about") About Us
 				a.promo__menu-link.js--scrollto__link(href="#team") Team
 				a.promo__menu-link.js--scrollto__link(href="#contacts") Contact us
 			.promo__hello
-				h1.promo__title Take your <span>Online</span><br><span>business to</span> the<br>next <span>level</span>
-				p.promo__subtitle Conversion Driven Design
+				h1.promo__title Take your 
+					span.colored.animated Online
+					br
+					span.colored.animated business to
+					| the<br>next
+					span.colored.animated level
+				p.promo__subtitle.animated Conversion Driven Design
 					span.delimiter I
 					| Custom Functionality
 					span.delimiter I
@@ -53,9 +58,9 @@ block content
 	section.scrollblock.tabs
 		.tab.cf.is-visible
 			.container
-				h2.tab__title We develop modern & quality products, like....
+				h2.tab__title(data-aos="fade-right") We develop modern & quality products, like....
 				ul.tabs__list.cf
-					li.tab__development.tabs__list-item.tabs__list-item--fourth
+					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="100")
 						.tab__development-img
 							img(src="img/corporate.png", alt="")
 						p.tab__development-title Corporate Websites
@@ -68,19 +73,19 @@ block content
 							p.tab__development-full__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 							a.tab__development-full__link(href="#") Call to Action
 
-					li.tab__development.tabs__list-item.tabs__list-item--fourth
+					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="200")
 						.tab__development-img
 							img(src="img/landing.png", alt="")
 						p.tab__development-title Landing Pages
 						a.btn.btn--transparent(href="#") Read more
 
-					li.tab__development.tabs__list-item.tabs__list-item--fourth
+					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="300")
 						.tab__development-img
 							img(src="img/WooCommerce.png", alt="")
 						p.tab__development-title Woo Commerce
 						a.btn.btn--transparent(href="#") Read more
 
-					li.tab__development.tabs__list-item.tabs__list-item--fourth
+					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="400")
 						.tab__development-img
 							img(src="img/WebPortals.png", alt="")
 						p.tab__development-title Web Portals
@@ -230,57 +235,57 @@ block content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 	section.scrollblock.awards
 		.container
-			h2.awards__title Award Winning Top Reviewed Company
+			h2.awards__title(data-aos="fade-up") Award Winning Top Reviewed Company
 			.awards__list(data-0-bottom-top="transform: translateX(-100%)" data--30p-bottom-top="transform: translateX(0%)" data--50p-bottom-top="transform: translateX(0%)" data--100p-bottom-top="transform: translateX(100%)")
-				a.awards__list-item(href="#")
+				a.awards__list-item(href="#" data-aos="fade-down")
 					img(src="img/10-best-design-logo.png", alt="")
-				a.awards__list-item(href="#")
+				a.awards__list-item(href="#" data-aos="fade-down")
 					img(src="img/Google.png", alt="")
-				a.awards__list-item(href="#")
+				a.awards__list-item(href="#" data-aos="fade-down")
 					img(src="img/Yelp_Logo.png", alt="")
-				a.awards__list-item(href="#")
+				a.awards__list-item(href="#" data-aos="fade-down")
 					img(src="img/upwork-logo.png", alt="")
-				a.awards__list-item(href="#")
+				a.awards__list-item(href="#" data-aos="fade-down")
 					img(src="img/UpCity_Logo.png", alt="")
 	section#portfolio.scrollblock.portfolio
-		h2.portfolio__title
+		h2.portfolio__title(data-aos="fade-up")
 			span PORTFOLIO
-		p.portfolio__subtitle We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
+		p.portfolio__subtitle(data-aos="fade-down") We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
 		.portfolio__list.cf
 			.portfolio__col
-				.portfolio__item.animated.fadeInUp(style="background-color: #272a2d")
+				.portfolio__item(style="background-color: #272a2d" data-aos="slide-up" data-aos-delay="100")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port1.jpg", alt="")
-				.portfolio__item.animated.fadeInUp(style="background-color: #e24242")
+				.portfolio__item(style="background-color: #e24242" data-aos="slide-up")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port2.jpg", alt="")
 			.portfolio__col
-				.portfolio__item.animated.fadeInUp(style="background-color: #f7941d")
+				.portfolio__item(style="background-color: #f7941d" data-aos="slide-up" data-aos-delay="200")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port3.jpg", alt="")
-				.portfolio__item.animated.fadeInUp(style="background-color: #2e529d")
+				.portfolio__item(style="background-color: #2e529d" data-aos="slide-up")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port4.jpg", alt="")
 			.portfolio__col
-				.portfolio__item.animated.fadeInUp(style="background-color: #f26c4f")
+				.portfolio__item(style="background-color: #f26c4f" data-aos="slide-up" data-aos-delay="300")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port2.jpg", alt="")
-				.portfolio__item.animated.fadeInUp(style="background-color: #272a2d")
+				.portfolio__item(style="background-color: #272a2d" data-aos="slide-up")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port1.jpg", alt="")
 
 			.portfolio__col
-				.portfolio__item.animated.fadeInUp(style="background-color: #d8eff5")
+				.portfolio__item(style="background-color: #d8eff5" data-aos="slide-up" data-aos-delay="400")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port3.jpg", alt="")
-				.portfolio__item.animated.fadeInUp(style="background-color: #9352c1")
+				.portfolio__item(style="background-color: #9352c1" data-aos="slide-up")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port4.jpg", alt="")
