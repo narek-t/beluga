@@ -31,17 +31,25 @@ block content
 					| Custom Functionality
 					span.delimiter I
 					| Explosive Marketing
-			.promo__tabs#services
-				.promo__tab.active-tab
-					span Web Development
-				.promo__tab
-					span Responsive Web-sites
-				.promo__tab
-					span Graphic Design
-				.promo__tab
-					span Digital Marketing
-				.promo__tab
-					span Mobile App
+			#services
+				.promo__tabs
+					.promo__tab.active-tab
+						span Web Development
+					.promo__tab
+						span Responsive Web-sites
+					.promo__tab
+						span Graphic Design
+					.promo__tab
+						span Digital Marketing
+					.promo__tab
+						span Mobile App
+				.promo__mobile--tabs-wrapper
+					select.promo__mobile--tabs
+						option(value="") Web Development
+						option(value="") Responsive Web-sites
+						option(value="") Graphic Design
+						option(value="") Digital Marketing
+						option(value="") Mobile App
 	section.scrollblock.tabs
 		.tab.cf.is-visible
 			.container
@@ -64,7 +72,7 @@ block content
 						.tab__development-img
 							img(src="img/landing.png", alt="")
 						p.tab__development-title Landing Pages
-						a.btn.btn--transparent#foo(href="#") Read more
+						a.btn.btn--transparent(href="#") Read more
 
 					li.tab__development.tabs__list-item.tabs__list-item--fourth
 						.tab__development-img
@@ -238,7 +246,7 @@ block content
 		h2.portfolio__title
 			span PORTFOLIO
 		p.portfolio__subtitle We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
-		.portfolio__list.cf.animatedParent
+		.portfolio__list.cf
 			.portfolio__col
 				.portfolio__item.animated.fadeInUp(style="background-color: #272a2d")
 					a.portfolio__item-link(href="#")

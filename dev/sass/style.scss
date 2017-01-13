@@ -69,16 +69,6 @@
 	}
 }
 
-.promo__tabs {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-}
-
 
 
 .promo__menu {
@@ -115,13 +105,13 @@
 		padding-right: 110px;
 	}
 	@media screen and (max-width: 1000px) {
-		padding-left: 30px;
-		padding-right: 0;
+		padding-right: 30px;
 	}
 	@media screen and (max-width: 670px) {
 		padding-top: 250px;
-		padding-bottom: 250px;
+		padding-bottom: 225px;
 		padding-left: 20px;
+		padding-right: 0;
 	}
 }
 
@@ -205,6 +195,60 @@
 	}
 }
 
+#services {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.promo__tabs {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	@media screen and (max-width: 670px) {
+		display: none;
+	}
+}
+
+.promo__mobile--tabs-wrapper {
+	display: none;
+	position: relative;
+	background: url(../img/down-arrow-sel.png) right 10px center no-repeat #252525;
+	width: 100%;
+	z-index: 9;
+	@media screen and (max-width: 670px) {
+		display: block;
+	}
+	&.sticky {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: auto;
+		right: auto;
+	}
+}
+
+.promo__mobile--tabs {
+	width: 100%;
+	outline: 0;
+	border: none;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #fff;
+	padding: 20px 40px 20px 15px;
+	font: 300 16px $mont;
+	cursor: pointer;
+	background: transparent;
+	&::-ms-expand {
+		display: none;
+	}
+}
 
 .promo__tab {
 	width: 20%;
@@ -236,6 +280,13 @@
 		span {
 			font-size: 16px;
 		}
+	}
+	@media screen and (max-width: 670px) {
+		width: 100%;
+		padding: 15px 0;
+		min-height: 1px;
+		display: block;
+		border: none;
 	}
 }
 
