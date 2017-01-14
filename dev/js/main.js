@@ -72,7 +72,7 @@ $(document).ready(function() {
 		});
 	});
 
-	if($(window).width() <= 670) {
+	if($(window).width() <= 670 && document.getElementById('services')) {
 		var tabOffset = $('#services').offset().top;
 		$(document).scroll(function() {
 			var scrolled = $(this).scrollTop();
@@ -90,6 +90,29 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+
+	// if($(window).width() >= 600 && document.getElementById('single-portfolio')) {
+	// 	var cloned = $('.single-portfolio__top').clone().addClass('cloned');
+	// 	$(cloned).insertAfter('.single-portfolio__top');
+
+
+
+	// 	$(document).on('DOMMouseScroll mousewheel', function (e) {
+	// 		var scrolled = $(this).scrollTop();
+	// 		var headingHeight = $('.single-portfolio__top').outerHeight();
+
+	// 		if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0 && scrolled > headingHeight) {
+	// 			$('.single-portfolio__top.cloned').removeClass('visible')
+	// 		} else {
+	// 			console.log('Up');
+	// 			$('.single-portfolio__top.cloned').addClass('visible')
+	// 		}
+	// 	});
+
+	// }
+
+
 });
 $(window).load(function() {
 	$('.loader').fadeOut(500);

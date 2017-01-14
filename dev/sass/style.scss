@@ -1624,6 +1624,9 @@ body {
 	bottom: 0;
 	transform: translateY(100%);
 	transition: transform .2s ease-in-out;
+	@media screen and (max-width: 470px) {
+		padding: 25px 25px 18px;
+	}
 }
 
 
@@ -1662,6 +1665,9 @@ body {
 		z-index: 11;
 		position: relative;
 	}
+	@media screen and (max-width: 670px) {
+		width: 100%;
+	}
 }
 
 
@@ -1690,12 +1696,104 @@ body {
 .portfolio-page__item--title {
 	margin: 0;
 	font: 300 22px $mont;
+	@media screen and (max-width: 470px) {
+		font-size: 18px;
+	}
 }
 
 .portfolio-page__item--tags {
 	font: 300 16px/24px $hind;
+	@media screen and (max-width: 470px) {
+		font-size: 14px;
+	}
 }
 
+.single-portfolio__top {
+	background: #131c1f;
+	&.cloned {
+		position: fixed;
+		top: 0;
+		transform: translateY(-100%);
+		transition: transform .6s ease-in-out;
+		&.visible {
+			transform: translateY(0);
+		}
+	}
+}
+
+.single-portfolio__heading {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 20px 0;
+	max-width: 1140px;
+	margin: auto;
+	align-items: center;
+	&--col {
+		width: 50%;
+		padding-right: 20px;
+		&:last-child {
+			padding-right: 0;
+			padding-left: 20px;
+		}
+		@media screen and (max-width: 600px) {
+			width: 100%;
+			padding: 0;
+			&:last-child {
+				padding: 0;
+				margin-top: 30px;
+			}
+		}
+	}
+	@media screen and (max-width: 600px) {
+		flex-wrap: wrap;
+	}
+}
+
+.single-portfolio {
+	.single__title {
+		font: 300 30px $mont;
+		color: #fff;
+		margin: 0 0 20px;
+	}
+	.single__description {
+		color: #ababab;;
+		font: 300 16px $hind;
+	}
+	.single__tags {
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 15px 13px 0;
+			border: 1px solid #ece7f4;
+			border-radius: 10px;
+			padding: 4px 17px;
+			color: #fff;
+			font: 300 15px $hind;
+		}
+	}
+	.single__image {
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.single__thanks {
+	text-align: center;
+	padding: 30px 15px 50px;
+	background: #131c1f;
+	&-title {
+		margin: 0 0 20px;
+		color: #fff;
+		font: 300 24px $mont;
+	}
+	.btn {
+		margin: auto;
+	}
+}
 
 
 
