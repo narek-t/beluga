@@ -356,7 +356,8 @@ body {
 }
 
 .tabs {
-	background: url(../img/tabs-bg.png) right center no-repeat #efefef;
+	background: url(../img/tabs-bg.png) center right no-repeat #efefef;
+	// background-size: cover;
 	padding: 120px 0 0;
 	@media screen and (max-width: 1370px) {
 		padding: 70px 0 0;
@@ -370,6 +371,9 @@ body {
 	display: none;
 	&.is-visible {
 		display: block;
+	}
+	.btn {
+		margin: 0 auto 30px;
 	}
 }
 
@@ -389,10 +393,11 @@ body {
 	@media screen and (max-width: 670px) {
 		max-width: 100%;
 	}
+
 }
 
 .tabs__list {
-	margin: 90px 0;
+	margin: 90px 0 20px;
 	padding: 0;
 	list-style-type: none;
 	@media screen and (max-width: 1370px) {
@@ -489,7 +494,6 @@ body {
 	background-repeat: no-repeat;
 	width: 80px;
 	height: 80px;
-	background-image: url(../img/tab-list-icon.png);
 	&::after {
 		content: '';
 		position: absolute;
@@ -569,6 +573,7 @@ body {
 		.tab__development-full {
 			transform: translateX(0);
 			transition: all .5s ease-in-out;
+			transform: translateZ(0);
 		}
 	}
 	.full-link {
@@ -721,6 +726,14 @@ body {
 .portfolio {
 	background: url(../img/portfolio-bg.jpg) center top no-repeat #191b21;
 	padding: 150px 0;
+	position: relative;
+	.btn {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 30px;
+		width: 100%;
+	}
 	&__title {
 		font: 900 55px/80px $mont;
 		letter-spacing: -.077em;
@@ -753,11 +766,16 @@ body {
 		}
 	}
 	@media screen and (max-width: 1370px) {
-		padding: 60px 0;
+		padding: 60px 0 120px;
 		background-position: top -95px center;
 	}
 	@media screen and (max-width: 470px) {
 		padding: 30px 0;
+		.btn {
+			position: static;
+			margin: 30px auto;
+			transform: none;
+		}
 	}
 }
 
@@ -995,7 +1013,7 @@ body {
 .standarts__img {
 	position: absolute;
 	left: 0;
-	top: 120px;
+	top: 60px;
 	max-width: 50%;
 	padding-right: 50px;
 	img {
@@ -2241,6 +2259,12 @@ body {
 }
 
 
+.or {
+	position: absolute;
+	top: 80%;
+	text-align: center;width: 100%;
+	left: 0;
+}
 
 
 

@@ -37,17 +37,15 @@ $(document).ready(function() {
 		$('.promo__tab').removeClass('active-tab');
 		$(this).addClass('active-tab');
 		$('.tabs .tab').removeClass('is-visible');
-		$('.tabs .tab').find('.fadeInUp').removeClass('fadeInUp');
+		$('.tabs .tab').find('.fadeInUp').removeClass('fadeInUp animated');
 		$('.tabs .tab').find('.wow').removeClass('wow').removeAttr('style');
 		$('.tabs .tab').eq(index).addClass('is-visible');
-		$('.tabs .tab').eq(index).find('.tab-fade').addClass('fadeInUp');
-		$('.tabs .tab').eq(index).find('.tab-fadeup').addClass('fadeInUp');
-		$('.tabs .tab').eq(index).find('.tab-fadeup').addClass('fadeInUp');
-
+		$('.tabs .tab').eq(index).find('.tab-fade').addClass('fadeInUp animated');
+		$('.tabs .tab').eq(index).find('.tab-fadeup').addClass('fadeInUp animated');
 		var topY = $(this).offset().top;
 		TweenMax.to($(window), 1, {
 			scrollTo:{
-				y: topY, 
+				y: topY,
 				autoKill: true
 			}, 
 			ease:Power3.easeOut 
@@ -209,6 +207,16 @@ $(window).load(function() {
 	setTimeout(function() {
 		$('.promo__title').addClass('visible');
 	}, 1000);
+
+	if(!Cookies.get('popup')) {
+		setTimeout(function() {
+			disableScroll();
+			$('body').addClass('no-scroll');
+			$('#big-popup').addClass('active');
+		}, 45000);
+		Cookies.set('popup', 'opened', { expires: 7 });
+		
+	}
 });
 
 var wow = new WOW({
