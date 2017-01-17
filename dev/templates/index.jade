@@ -14,7 +14,7 @@ block content
 				a.main__nav-item.js--scrollto__link(href="#about") About Us
 				a.main__nav-item.js--scrollto__link(href="#team") Team
 				a.main__nav-item.js--scrollto__link(href="#contacts") Contact us
-	section.scrollblock.promo.ie-extra-wrapper
+	section.promo.ie-extra-wrapper
 		.promo__inner
 			a.promo__logo.animated(href="#")
 				img(src="img/logo.png", alt="")
@@ -36,8 +36,10 @@ block content
 					| Custom Functionality
 					span.delimiter I
 					| Explosive Marketing
+				a.open-popup(href="#" data-open="big-popup") OPEN BIG
+				a.open-popup(href="#" data-open="small-popup") OPEN SMALLL
 			#services
-				.promo__tabs
+				.promo__tabs.animated
 					.promo__tab.active-tab
 						span Web Development
 					.promo__tab
@@ -55,16 +57,17 @@ block content
 						option(value="") Graphic Design
 						option(value="") Digital Marketing
 						option(value="") Mobile App
-	section.scrollblock.tabs
+	section.tabs
 		.tab.cf.is-visible
 			.container
-				h2.tab__title(data-aos="fade-right") We develop modern & quality products, like....
+				h2.tab__title.animated.wow.fadeInUp We develop modern & quality products, like....
 				ul.tabs__list.cf
-					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="100")
+					li.tab__development.tabs__list-item.tabs__list-item--fourth.animated.wow.fadeInUp.tab-fadeup.animated
 						.tab__development-img
 							img(src="img/corporate.png", alt="")
 						p.tab__development-title Corporate Websites
 						a.btn.btn--transparent(href="#") Read more
+						a.full-link(href="#")
 						.tab__development-full
 							span.tab__development-full__close
 							.tab__development-full__img
@@ -73,50 +76,74 @@ block content
 							p.tab__development-full__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 							a.tab__development-full__link(href="#") Call to Action
 
-					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="200")
+					li.tab__development.tabs__list-item.tabs__list-item--fourth.animated.wow.fadeInUp.tab-fadeup.animated
 						.tab__development-img
 							img(src="img/landing.png", alt="")
 						p.tab__development-title Landing Pages
 						a.btn.btn--transparent(href="#") Read more
+						a.full-link(href="#")
+						.tab__development-full
+							span.tab__development-full__close
+							.tab__development-full__img
+								img(src="img/tab-img.png", alt="")
+							p.tab__development-full__title Corporate WebSites
+							p.tab__development-full__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							a.tab__development-full__link(href="#") Call to Action
 
-					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="300")
+					li.tab__development.tabs__list-item.tabs__list-item--fourth.animated.wow.fadeInUp.tab-fadeup.animated
 						.tab__development-img
 							img(src="img/WooCommerce.png", alt="")
 						p.tab__development-title Woo Commerce
 						a.btn.btn--transparent(href="#") Read more
+						a.full-link(href="#")
+						.tab__development-full
+							span.tab__development-full__close
+							.tab__development-full__img
+								img(src="img/tab-img.png", alt="")
+							p.tab__development-full__title Corporate WebSites
+							p.tab__development-full__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							a.tab__development-full__link(href="#") Call to Action
 
-					li.tab__development.tabs__list-item.tabs__list-item--fourth(data-aos="slide-up" data-aos-delay="400")
+					li.tab__development.tabs__list-item.tabs__list-item--fourth.animated.wow.fadeInUp.tab-fadeup.animated
 						.tab__development-img
 							img(src="img/WebPortals.png", alt="")
 						p.tab__development-title Web Portals
 						a.btn.btn--transparent(href="#") Read more
+						a.full-link(href="#")
+						.tab__development-full
+							span.tab__development-full__close
+							.tab__development-full__img
+								img(src="img/tab-img.png", alt="")
+							p.tab__development-full__title Corporate WebSites
+							p.tab__development-full__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							a.tab__development-full__link(href="#") Call to Action
 		.tab.cf
 			.container
-				h2.tab__title We develop modern & quality products, like....
-				h4.tab__subheading Statistics
-				p.tab__subtitle  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				h2.tab__title.tab-fade.animated We develop modern & quality products, like....
+				h4.tab__subheading.tab-fade.animated Statistics
+				p.tab__subtitle.tab-fade.animated  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 				ul.tabs__list.cf
-					li.cf.tabs__list-item.tabs__list-item--third
+					li.cf.tabs__list-item.tabs__list-item--third.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 							p.tabs__list-txt Responsive design allows you to cover the entire audience on the Internet. PC or laptop, any smartphone or tablet, the site solves problems of your business with the same efficiency.
-					li.cf.tabs__list-item.tabs__list-item--third
+					li.cf.tabs__list-item.tabs__list-item--third.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 							p.tabs__list-txt Responsive design allows you to cover the entire audience on the Internet. PC or laptop, any smartphone or tablet, the site solves problems of your business with the same efficiency.
-					li.cf.tabs__list-item.tabs__list-item--third
+					li.cf.tabs__list-item.tabs__list-item--third.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 							p.tabs__list-txt Responsive design allows you to cover the entire audience on the Internet. PC or laptop, any smartphone or tablet, the site solves problems of your business with the same efficiency.
-					li.cf.tabs__list-item.tabs__list-item--third
+					li.cf.tabs__list-item.tabs__list-item--third.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 							p.tabs__list-txt Responsive design allows you to cover the entire audience on the Internet. PC or laptop, any smartphone or tablet, the site solves problems of your business with the same efficiency.
-					li.cf.tabs__list-item.tabs__list-item--third
+					li.cf.tabs__list-item.tabs__list-item--third.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
@@ -124,423 +151,481 @@ block content
 
 		.tab.cf
 			.container
-				h2.tab__title We develop modern & quality products, like1....
-				p.tab__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				h2.tab__title.tab-fade.animated We develop modern & quality products, like1....
+				p.tab__subtitle.tab-fade.animated Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				ul.tabs__list.cf
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 		.tab.cf
 			.container
-				h2.tab__title We develop modern & quality products, like2....
-				p.tab__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				h2.tab__title.tab-fade.animated We develop modern & quality products, like2....
+				p.tab__subtitle.tab-fade.animated Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				ul.tabs__list.cf
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
 		.tab.cf
 			.container
-				h2.tab__title We develop modern & quality products, like3....
-				p.tab__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				h2.tab__title.tab-fade.animated We develop modern & quality products, like3....
+				p.tab__subtitle.tab-fade.animated Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				ul.tabs__list.cf
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-					li.cf.tabs__list-item.tabs__list-item--fourth
+					li.cf.tabs__list-item.tabs__list-item--fourth.animated.tab-fadeup
 						.tabs__list-icon
 						.tabs__list-content
 							p.tabs__list-heading Greater efficiency SMM efficiency
-	section.scrollblock.awards
+	section.awards
 		.container
-			h2.awards__title(data-aos="fade-up") Award Winning Top Reviewed Company
-			.awards__list(data-0-bottom-top="transform: translateX(-100%)" data--30p-bottom-top="transform: translateX(0%)" data--50p-bottom-top="transform: translateX(0%)" data--100p-bottom-top="transform: translateX(100%)")
-				a.awards__list-item(href="#" data-aos="fade-down")
+			h2.awards__title.animated.fadeInUp.wow Award Winning Top Reviewed Company
+			.awards__list
+				a.awards__list-item.wow.animated.fadeIn(href="#")
 					img(src="img/10-best-design-logo.png", alt="")
-				a.awards__list-item(href="#" data-aos="fade-down")
+				a.awards__list-item.wow.animated.fadeIn(href="#")
 					img(src="img/Google.png", alt="")
-				a.awards__list-item(href="#" data-aos="fade-down")
+				a.awards__list-item.wow.animated.fadeIn(href="#")
 					img(src="img/Yelp_Logo.png", alt="")
-				a.awards__list-item(href="#" data-aos="fade-down")
+				a.awards__list-item.wow.animated.fadeIn(href="#")
 					img(src="img/upwork-logo.png", alt="")
-				a.awards__list-item(href="#" data-aos="fade-down")
+				a.awards__list-item.wow.animated.fadeIn(href="#")
 					img(src="img/UpCity_Logo.png", alt="")
-	section#portfolio.scrollblock.portfolio
-		h2.portfolio__title(data-aos="fade-up")
+	section#portfolio.portfolio
+		h2.portfolio__title.wow.animated.fadeInUp
 			span PORTFOLIO
-		p.portfolio__subtitle(data-aos="fade-down") We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
+		p.portfolio__subtitle.wow.animated.fadeInUp We have vast experience working with various industries from non profits and government contractors to investment firms and manufacturing
 		.portfolio__list.cf
 			.portfolio__col
-				.portfolio__item(style="background-color: #272a2d" data-aos="slide-up" data-aos-delay="100")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #272a2d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port1.jpg", alt="")
-				.portfolio__item(style="background-color: #e24242" data-aos="slide-up")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #e24242")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port2.jpg", alt="")
 			.portfolio__col
-				.portfolio__item(style="background-color: #f7941d" data-aos="slide-up" data-aos-delay="200")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #f7941d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port3.jpg", alt="")
-				.portfolio__item(style="background-color: #2e529d" data-aos="slide-up")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #2e529d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port4.jpg", alt="")
 			.portfolio__col
-				.portfolio__item(style="background-color: #f26c4f" data-aos="slide-up" data-aos-delay="300")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #f26c4f")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port2.jpg", alt="")
-				.portfolio__item(style="background-color: #272a2d" data-aos="slide-up")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #272a2d")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port1.jpg", alt="")
-
 			.portfolio__col
-				.portfolio__item(style="background-color: #d8eff5" data-aos="slide-up" data-aos-delay="400")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #d8eff5")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port3.jpg", alt="")
-				.portfolio__item(style="background-color: #9352c1" data-aos="slide-up")
+				.portfolio__item.wow.animated.fadeInUp(style="background-color: #9352c1")
 					a.portfolio__item-link(href="#")
 					p.portfolio__item-title Agency Jet
 					img(src="img/portfolio/port4.jpg", alt="")
 	section.services
 		.container.cf
 			.col-half
-				h2.section-title--half Urgent website improvement services
-				p.section-subtitle--half Is your website in a desperate need of an 
+				h2.section-title--half.wow.animated.fadeInUp Urgent website improvement services
+				p.section-subtitle--half.wow.animated.fadeInUp Is your website in a desperate need of an 
 					span effective facelift?
-				ul.services__list
+				ul.services__list.wow.animated.fadeInUp
 					li.services__list-item.icon-arrow Does it have proper call to action placement?
 					li.services__list-item.icon-arrow Is design based on heat map analysis?
 					li.services__list-item.icon-arrow Are your value propositions properly highlighted?
 					li.services__list-item.icon-arrow Is information is effectively delivered?
 					li.services__list-item.icon-arrow Is customer communication facilitated and encouraged?
-				a.btn.btn--colored(href="#") Read more
-			.services-layers.animated.slideInRight
-				.layer3.services-layer.animated.slideInRight
+				a.btn.btn--colored.wow.animated.fadeInUp(href="#") Read more
+			.services-layers.animated.slideInRight.wow
+				.layer3.services-layer.animated.slideInRight.wow
 					img(src="img/layer3.png", alt="")
-				.layer2.services-layer.animated.slideInRight
+				.layer2.services-layer.animated.slideInRight.wow
 					img(src="img/layer2.png", alt="")
 				.layer1.services-layer
 					img(src="img/layer1.png", alt="")
 	section.standarts
 		.container.cf
-			.standarts__img
+			.standarts__img.wow.animated.fadeInLeft
 				img(src="img/standarts-img.jpg", alt="")
 			.col-half.align-right
-				h2.section-title--half Does it even comply with the current web standards?
-				p.section-subtitle--half Is your website in a desperate need of an 
+				h2.section-title--half.wow.animated.fadeInUp Does it even comply with the current web standards?
+				p.section-subtitle--half.wow.animated.fadeInUp Is your website in a desperate need of an 
 					span effective facelift?
-				ul.services__list
+				ul.services__list.wow.animated.fadeInUp
 					li.services__list-item.icon-arrow Is it mobile optimized for every device?
 					li.services__list-item.icon-arrow Does it pass W3C validation for any critical code errors?
 					li.services__list-item.icon-arrow Is it optimized to load fast for better user experience?
 					li.services__list-item.icon-arrow Is it cross browser and cross platform compatible so you don't miss any potential customers?
-				a.btn.btn--black(href="#") Read more
+				a.btn.btn--black.wow.animated.fadeInUp(href="#") Read more
 	section#about.why
 		.container
-			h2.why-title So Why Work with Us?
+			h2.why-title.wow.animated.fadeInUp So Why Work with Us?
 			ul.why__list.cf
-				li.why__list-item.cf
+				li.why__list-item.cf.wow.animated.fadeInUp
 					.why__list-icon(style="background-image: url(img/why1.png)")
 					.why__list-content
 						p.why__list-title Flowless job history
 						p.why__list-description (This kind of claim does count for something, right?) Over 200 reviews on these respectable platforms - don't trust us, trust them!
-				li.why__list-item.cf
+				li.why__list-item.cf.wow.animated.fadeInUp
 					.why__list-icon(style="background-image: url(img/why2.png)")
 					.why__list-content
 						p.why__list-title One stop shop... 
 						p.why__list-description ...offering top quality, unique design, custom dev solutions and effective online marketing (Psst some of us brew beer and make mean beef jerky too1)
-				li.why__list-item.cf
+				li.why__list-item.cf.wow.animated.fadeInUp
 					.why__list-icon(style="background-image: url(img/why3.png)")
 					.why__list-content
 						p.why__list-title Incredible portfolio
 						p.why__list-description (We love to brag about it while looking forward to hearing your thoughts on the matter Let us know if we're as good as we say!)
-				li.why__list-item.cf
+				li.why__list-item.cf.wow.animated.fadeInUp
 					.why__list-icon(style="background-image: url(img/why4.png)")
 					.why__list-content
 						p.why__list-title Peace of mind...
 						p.why__list-description ...with our bulletproof warranty, free training and ongoing support (Yep, that is true No bs)
-				li.why__list-item.cf
+				li.why__list-item.cf.wow.animated.fadeInUp
 					.why__list-icon(style="background-image: url(img/why5.png)")
 					.why__list-content
 						p.why__list-title We speak YOUR language in YOUR timezone
 						p.why__list-description (Our Cofee machine is strong and Our Google translate skills are impeccable Give us a try, Gaijin<)
-				li.why__list-item.cf
+				li.why__list-item.cf.wow.animated.fadeInUp
 					.why__list-icon(style="background-image: url(img/why6.png)")
 					.why__list-content
 						p.why__list-title Strong team... 
 						p.why__list-description ...of 35 world-class experts ready to make your every wish come true (Whether you want us to always be there for you OR disappear after one awe-inspiring project - We will obey you, master)
 	section#team.team
 		.container
-			h2.team-title OUR TEAM
+			h2.team-title.wow.animated.fadeInUp OUR TEAM
 			.team__list
-				.team__list-item
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.ceo
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.ceo
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.design
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.design
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.coder
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.coder
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.ceo
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.design
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.design
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.coder
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.coder
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.ceo
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.ceo
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.design
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.design
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.coder
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.coder
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.design
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.ceo
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.coder
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.design
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.ceo
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.coder
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.design
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.ceo
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.coder
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.design
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.design
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
-				.team__list-item
+							
+				.team__list-item.wow.animated.fadeInUp
 					.team__list-item--inner
-						i.coder
-						img(src="img/team-example.jpg", alt="")
-						.team__list-item--hover
-							.team__list-item--hover__inner
+						.team__list-item--front.team__list--side
+							i.coder
+							img(src="img/team-example.jpg", alt="")
+						.team__list-item--back.team__list--side
+							img(src="img/team-example.jpg", alt="")
+							.overlay
+							.team__list-item--back__inner
 								p.team__list-item-name Alexander Zolotarevsky
 								p.team__list-item-job CEO Manager
 								a.team__list-item-contact(href="#") CONTACT
+							
+
 	section.reviews
 		.container
-			.reviews__list
-				.reviews__list-item
+			.reviews__list#reviews__list
+				.reviews__list-item.wow.animated.fadeInUp
 					.reviewer-logo
 						img(src="img/reviewr1.jpg", alt="")
 					p.reviewer-name 3D Maker Supply, Andrew R
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .2s")
 					.reviewer-logo
 						img(src="img/reviewer2.jpg", alt="")
 					p.reviewer-name Aether Pal, David F
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adeprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .4s")
 					.reviewer-logo
 						img(src="img/reviewer3.jpg", alt="")
 					p.reviewer-name 3Software Platform, Bob S
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .6s")
 					.reviewer-logo
 						img(src="img/reviewer4.jpg", alt="")
 					p.reviewer-name 3Software Platform, Bob Y
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .2s")
 					.reviewer-logo
 						img(src="img/reviewr1.jpg", alt="")
 					p.reviewer-name 3D Maker Supply, Andrew R
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .4s")
 					.reviewer-logo
 						img(src="img/reviewer2.jpg", alt="")
 					p.reviewer-name Aether Pal, David F
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adeprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .6s")
 					.reviewer-logo
 						img(src="img/reviewer3.jpg", alt="")
 					p.reviewer-name 3Software Platform, Bob S
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni.
-				.reviews__list-item
+				.reviews__list-item.wow.animated.fadeInUp(style="animation-delay: .8s")
 					.reviewer-logo
 						img(src="img/reviewer4.jpg", alt="")
 					p.reviewer-name 3Software Platform, Bob Y
 					p.reviwere-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni.
+			a.btn.btn--colored.load-more-reviews(href="#") View more
 	section#contacts.contacts
-		
 		.container
 			.contacts__inner
 				img.footer-logo(src="img/footer-logo.png", alt="")
@@ -574,6 +659,41 @@ block content
 			p.copyright__text Copyright © 2016 Beluga Labs. All Rights Reserved.
 			p.address Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, 
 				a(href="#") BelugaLab.com
+	.popup#big-popup
+		span.close-popup
+		.popup__form-wrapper
+			p.popup__form-title Completely FREE No Obligation Analysis ...
+			form.popup__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				button.btn--colored.btn.send-btn Send
+		.popup-bg
+			img(src="img/popup.png", alt="")
+
+	.popup#small-popup
+		span.close-popup
+		.contacts__inner
+			img.footer-logo(src="img/footer-logo.png", alt="")
+			h2.contacts__title CONTACT US
+			form.contacts__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="tel" placeholder="Phone")
+					span.animated-border
+				.contacts__form-row
+					textarea.contacts__form-input.contacts__form-message(placeholder="Message")
+					span.animated-border
+				button.btn--black.btn.send-btn Send
+
 
 
 

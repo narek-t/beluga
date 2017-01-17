@@ -1,14 +1,49 @@
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+	e = e || window.event;
+	if (e.preventDefault)
+		e.preventDefault();
+	e.returnValue = false;  
+}
+
+function preventDefaultForScrollKeys(e) {
+	if (keys[e.keyCode]) {
+		preventDefault(e);
+		return false;
+	}
+}
+function disableScroll() {
+	if (window.addEventListener) // older FF
+		window.addEventListener('DOMMouseScroll', preventDefault, false);
+		window.onwheel = preventDefault; // modern standard
+		window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+		// window.ontouchmove  = preventDefault; // mobile
+		document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+	if (window.removeEventListener)
+		window.removeEventListener('DOMMouseScroll', preventDefault, false);
+		window.onmousewheel = document.onmousewheel = null; 
+		window.onwheel = null; 
+		// window.ontouchmove = null;  
+		document.onkeydown = null;  
+}
+
 $(document).ready(function() {
-	AOS.init({
-		duration: 1000,
-		easing: 'ease-out-quad',
-	});
 	$('.promo__tab').click(function(event) {
 		var index = $(this).index();
 		$('.promo__tab').removeClass('active-tab');
 		$(this).addClass('active-tab');
 		$('.tabs .tab').removeClass('is-visible');
+		$('.tabs .tab').find('.fadeInUp').removeClass('fadeInUp');
+		$('.tabs .tab').find('.wow').removeClass('wow').removeAttr('style');
 		$('.tabs .tab').eq(index).addClass('is-visible');
+		$('.tabs .tab').eq(index).find('.tab-fade').addClass('fadeInUp');
+		$('.tabs .tab').eq(index).find('.tab-fadeup').addClass('fadeInUp');
+		$('.tabs .tab').eq(index).find('.tab-fadeup').addClass('fadeInUp');
+
 		var topY = $(this).offset().top;
 		TweenMax.to($(window), 1, {
 			scrollTo:{
@@ -17,6 +52,16 @@ $(document).ready(function() {
 			}, 
 			ease:Power3.easeOut 
 		});
+	});
+
+	$('.tab__development .full-link, .tab__development .btn').click(function(event) {
+		event.preventDefault();
+		$('.tab__development').removeClass('active');
+		$(this).parents('.tab__development').addClass('active');
+	});
+	$('.tab__development-full__close').click(function(event) {
+		event.preventDefault();
+		$(this).parents('.tab__development').removeClass('active');
 	});
 
 	$('.js--scrollto__link').click(function(event) {
@@ -111,17 +156,62 @@ $(document).ready(function() {
 	// 	});
 
 	// }
+	$('.open-popup').click(function(event) {
+		event.preventDefault();
+		var open = $(this).data('open');
+		disableScroll();
+		$('body').addClass('no-scroll');
+		$('#'+open).addClass('active');
+	});
+
+	$('.close-popup').click(function(event) {
+		$('body').removeClass('no-scroll');
+		$('.popup').removeClass('active');
+		enableScroll();
+	});
+	var startNumber = 0;
+
+	$('.load-more-reviews').click(function(event) {
+		event.preventDefault();
+		$.getJSON('../reviews.json', function(data) {
+			var count = data.length;
+			var html = [];
+			var displayCount = 8;
+			$.each(data, function (key, val) {
+				html.push('<div class="reviews__list-item animated fadeInUp"><div class="reviewer-logo"><img src="'+val.logo+'" alt=""></div><p class="reviewer-name">'+val.name+'</p><p class="reviwere-text">'+val.text+'</p></div>');
+			});
+			var x = html.slice(startNumber, startNumber+displayCount);
+			$('#reviews__list').append(x)
+			startNumber+=displayCount;
+			if(count < startNumber) {
+				$('.load-more-reviews').remove();
+			}
+		});
+
+	});
 
 
-});
+
+
+
+});//ready
+
 $(window).load(function() {
 	$('.loader').fadeOut(500);
 	$('body').removeClass('loading');
 	setTimeout(function() {
-		$('.promo__title .colored').addClass('zoomIn');
-		$('.promo__subtitle').addClass('fadeInUp');
-		$('.promo__menu').addClass('fadeInRight');
-		$('.promo__logo').addClass('zoomIn');
-	}, 100);
-	
+		$('.promo__title span.animated').addClass('flipInX visible');
+		$('.promo__subtitle').addClass('fadeInUp visible');
+		$('.promo__menu').addClass('fadeInRight visible');
+		$('.promo__logo').addClass('fadeInLeft visible');
+		$('.promo__tabs').addClass('fadeInUp visible');
+	}, 500);
+	setTimeout(function() {
+		$('.promo__title').addClass('visible');
+	}, 1000);
 });
+
+var wow = new WOW({
+    offset: 100,
+});
+wow.init();
