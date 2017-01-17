@@ -16,8 +16,6 @@ body {
 }
 .loading {
 	overflow: hidden;
-	visibility: hidden;
-	opacity: 0;
 	transition: opacity 1s ease-in-out;
 }
 
@@ -30,6 +28,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 99999;
 }
 
 .all-wrapper {
