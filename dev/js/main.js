@@ -189,6 +189,11 @@ $(document).ready(function() {
 	});
 
 
+	$('button.send-btn').click(function(event) {
+		event.preventDefault();
+		$('.hide-in-thank').addClass('hidden');
+		$('.thank').addClass('visible');
+	});
 
 
 
