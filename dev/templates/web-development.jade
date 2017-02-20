@@ -1,0 +1,137 @@
+extends _layout
+block content
+	.main-menu__wrapper
+		.main-menu__inner.cf
+			.main-menu__control
+				a.main-menu__close(href="#")
+					span
+					span
+					span
+			img.menu__logo(src="img/menu-logo.png", alt="")
+			nav.main__nav
+				a.main__nav-item(href="/#services") Services
+				a.main__nav-item(href="portfolio.html") portfolio
+				a.main__nav-item(href="/#about") About Us
+				a.main__nav-item(href="/#team") Team
+				a.main__nav-item(href="/#contacts") Contact us
+	.page__header
+		.container
+			a.page__logo.animated(href="/")
+				img(src="img/menu-logo.png", alt="")
+			nav.page__menu.animated
+				a.page__menu-link(href="/#services") Services
+				a.page__menu-link(href="portfolio.html") Portfolio
+				a.page__menu-link(href="/#about") About Us
+				a.page__menu-link(href="/#team") Team
+				a.page__menu-link(href="/#contacts") Contact us
+	section.page__heading
+		img.page__bg(src="img/design-page-bg.jpg", alt="")
+		.container.cf
+			h1.page__title 
+				span.colored.animated WEB
+				| DEVELOPMENT 
+			p.page__description.animated Don't let the limitations of cookie-cutter solutions control your websites functionality and business workflow. Our team of talented developers brings many years of experience to the table and will work with you to develop a custom solution that will perfectly fit your needs. If you can dream it, we can build it. With us there are absolutely no restrictions and we do 100% of our work in house. Some of our biggest clients are other design and marketing firms that outsource their programming projects to us.
+			a.btn.btn--black.open-popup(href="#" data-open="big-popup") Read more
+	section.page__content
+		.tab.cf
+			.container
+				h2.tab__title.animated.wow.fadeInUp We develop modern & quality products, like....
+				ul.tabs__list.cf
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/dev-p1.png)")
+						.tabs__list-content
+							p.tabs__list-heading WORDPRESS DEVELOPMENT
+							p.tabs__list-txt WordPress, the platform behind many of today's most popular websites and is arguably the most user friendly, flexible and widely used CMS platform available. We are WordPress gurus second to none! From custom plugins, to custom post types or a PSD to WordPress conversions - our development team is intimately familiar with everything WordPress and are ready to turn your ideas into fully functional reality.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/dev-p2.png)")
+						.tabs__list-content
+							p.tabs__list-heading JOOMLA DEVELOPMENT
+							p.tabs__list-txt Joomla is a powerful framework and content management system, catering to businesses of all shapes and sizes and is used by major companies all around the world. With some unique features and plug ins Joomla is a great alternative when WordPress is not an option. With a multitude of available extensions and our expertise in custom Joomla development we are the agency of choice for every project on this fantastic CMS.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/dev-p3.png)")
+						.tabs__list-content
+							p.tabs__list-heading ECOMMERCE DEVELOPMENT
+							p.tabs__list-txt As more and more shoppers are choosing online shopping over the traditional brick and mortar, ecommerce is the door to increased opportunities in this competitive market. We provide top-of-the-line ecommerce solutions, giving businesses additional ways to expand their client base. Our team develops completely custom solutions to manage products, inventory, payments and shipping using secure and proven platforms. We are experienced and have a proven track record so put us to the test and give us a call.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/dev-p4.png)")
+						.tabs__list-content
+							p.tabs__list-heading MOBILE DEVELOPMENT
+							p.tabs__list-txt Do you browse websites on your mobile device? Exactly. The rate at which internet users are accessing the web is growing at a sharp incline. The websites we develop are completely responsive, meaning they automatically respond to any screen they are viewed on - rearranging and resizing elements to provide a great user experience regardless of what device your potential client is accessing your website from. The better the user experience, the faster the visitor will navigate to the information they are looking for and ultimately take the plunge from a visitor to a customer.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/dev-p5.png)")
+						.tabs__list-content
+							p.tabs__list-heading CUSTOM DEVELOPMENT
+							p.tabs__list-txt We are a professional development firm that supplies services to both B2B and B2C clients. We deliver a full range of custom development options. So when out-of-the-box solutions are not able to satisfy your needs or you have a more elaborate project don’t hesitate to give us a call. Our development team is 100% in house! We do not outsource anything to anybody so we guarantee integrity of your project from start to finish! Using cutting edge technologies and following strict programming conventions - we are able to provide creative and complete solutions to every project’s requirements.
+				.page__bottom.cf
+					.page__bottom-text.animated.wow.fadeInUp
+						p To receive a free, no obligation consultation for your project contact us today.<br>You will receive a professional evaluation and quote on the same day, guaranteed!
+					a.btn.btn--colored.open-popup.animated.wow.fadeInUp(href="#" data-open="big-popup") Read more
+	section.footer.cf
+		ul.social.cf
+			li.social-item.fb
+				a(href="https://www.facebook.com/BelugaLabs/" target="_blank")
+			li.social-item.twit
+				a(href="https://twitter.com/belugalabs" target="_blank")
+			li.social-item.gplus
+				a(href="https://plus.google.com/105234390455784828244" target="_blank")
+			li.social-item.yelp
+				a(href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank")
+		.copyright
+			p.copyright__text Copyright © 2016 Beluga Labs. All Rights Reserved.
+			p.address Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, 
+				a(href="#") BelugaLab.com
+	.popup#big-popup
+		span.close-popup
+		.thank
+			img.thank-logo(src="img/logo.png", alt="")
+			img.thank-img(src="img/thank.png", alt="")
+			p.thank-message We'll contact You shortly.
+		.popup__form-wrapper.hide-in-thank
+			p.popup__form-title Completely FREE No Obligation Analysis ...
+			form.popup__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				button.btn--colored.btn.send-btn Send
+		.popup-bg.hide-in-thank
+			img(src="img/popup.png", alt="")
+
+	.popup#small-popup
+		span.close-popup
+		.thank
+			img.thank-logo(src="img/logo.png", alt="")
+			img.thank-img(src="img/thank.png", alt="")
+			p.thank-message We'll contact You shortly.
+		.contacts__inner.hide-in-thank
+			img.footer-logo(src="img/footer-logo.png", alt="")
+			h2.contacts__title CONTACT US
+			form.contacts__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="tel" placeholder="Phone")
+					span.animated-border
+				.contacts__form-row
+					textarea.contacts__form-input.contacts__form-message(placeholder="Message")
+					span.animated-border
+				button.btn--black.btn.send-btn Send
+			p.call-us ... or just call us 
+					a(href="tel:1-855-823-5842") 1-855-823-5842
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

@@ -1,6 +1,6 @@
 extends _layout
 block content
-	section.portfolio-page__wrapper.cf
+	section.portfolio-page__wrapper.cf#portfolio-list
 		.protfolio-menu__wrapper
 			.main-menu__inner.portfolio-page__menu.cf
 				.main-menu__control
@@ -8,7 +8,8 @@ block content
 						span
 						span
 						span
-				img.menu__logo(src="img/menu-logo.png", alt="")
+				a(href="/")
+					img.menu__logo(src="img/menu-logo.png", alt="")
 				nav.main__nav
 					a.main__nav-item(href="/#services") Services
 					a.main__nav-item(href="#") portfolio
@@ -16,129 +17,23 @@ block content
 					a.main__nav-item(href="/#team") Team
 					a.main__nav-item(href="/#contacts") Contact us
 		.portfolio-page__content
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/pasokin.png", alt="")
+			.portfolio-page__item(v-for="(portfolioItem, index) in portfolioItems")
+				a.full-link(:href="'/item.html#'+index" target="_blank")
+				img.portfolio-page__item--thumb(:src="portfolioItem.thumb", :alt="portfolioItem.title")
 				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/scothow.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/kritsberg.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/21stHapilos.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/pasokin.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/scothow.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/kritsberg.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/21stHapilos.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/pasokin.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/scothow.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/kritsberg.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/21stHapilos.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/pasokin.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/scothow.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/kritsberg.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-			.portfolio-page__item
-				a.full-link(href="#")
-				img.portfolio-page__item--thumb(src="img/portfolio/thumbs/21stHapilos.png", alt="")
-				.portfolio-page__item--content
-					p.portfolio-page__item--title SOHO DESIGN
-					p.portfolio-page__item--tags Design, WordPress, Responsive, UX
-					a.btn.btn--colored(href="#1") View
-	
+					p.portfolio-page__item--title {{portfolioItem.title}}
+					p.portfolio-page__item--tags {{portfolioItem.shortTags}}
+					span.btn.btn--colored View
 	section.footer.cf
 		ul.social.cf
 			li.social-item.fb
-				a(href="#")
+				a(href="https://www.facebook.com/BelugaLabs/" target="_blank")
 			li.social-item.twit
-				a(href="#")
+				a(href="https://twitter.com/belugalabs" target="_blank")
 			li.social-item.gplus
-				a(href="#")
+				a(href="https://plus.google.com/105234390455784828244" target="_blank")
 			li.social-item.yelp
-				a(href="#")
+				a(href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank")
 		.copyright
 			p.copyright__text Copyright © 2016 Beluga Labs. All Rights Reserved.
 			p.address Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, 

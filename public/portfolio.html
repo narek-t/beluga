@@ -17,118 +17,28 @@
           <div class="cssload-cube cssload-c3"></div>
         </div>
       </div>
-      <section class="portfolio-page__wrapper cf">
+      <section id="portfolio-list" class="portfolio-page__wrapper cf">
         <div class="protfolio-menu__wrapper">
           <div class="main-menu__inner portfolio-page__menu cf">
-            <div class="main-menu__control"><a href="#" class="main-menu__close"><span></span><span></span><span></span></a></div><img src="img/menu-logo.png" alt="" class="menu__logo"/>
+            <div class="main-menu__control"><a href="#" class="main-menu__close"><span></span><span></span><span></span></a></div><a href="/"><img src="img/menu-logo.png" alt="" class="menu__logo"/></a>
             <nav class="main__nav"><a href="/#services" class="main__nav-item">Services</a><a href="#" class="main__nav-item">portfolio</a><a href="/#about" class="main__nav-item">About Us</a><a href="/#team" class="main__nav-item">Team</a><a href="/#contacts" class="main__nav-item">Contact us</a></nav>
           </div>
         </div>
         <div class="portfolio-page__content">
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/pasokin.png" alt="" class="portfolio-page__item--thumb"/>
+          <div v-for="(portfolioItem, index) in portfolioItems" class="portfolio-page__item"><a :href="'/item.html#'+index" target="_blank" class="full-link"></a><img :src="portfolioItem.thumb" :alt="portfolioItem.title" class="portfolio-page__item--thumb"/>
             <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/scothow.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/kritsberg.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/21stHapilos.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/pasokin.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/scothow.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/kritsberg.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/21stHapilos.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/pasokin.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/scothow.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/kritsberg.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/21stHapilos.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/pasokin.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/scothow.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/kritsberg.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
-            </div>
-          </div>
-          <div class="portfolio-page__item"><a href="#" class="full-link"></a><img src="img/portfolio/thumbs/21stHapilos.png" alt="" class="portfolio-page__item--thumb"/>
-            <div class="portfolio-page__item--content">
-              <p class="portfolio-page__item--title">SOHO DESIGN</p>
-              <p class="portfolio-page__item--tags">Design, WordPress, Responsive, UX</p><a href="#1" class="btn btn--colored">View</a>
+              <p class="portfolio-page__item--title">{{portfolioItem.title}}</p>
+              <p class="portfolio-page__item--tags">{{portfolioItem.shortTags}}</p><span class="btn btn--colored">View</span>
             </div>
           </div>
         </div>
       </section>
       <section class="footer cf">
         <ul class="social cf">
-          <li class="social-item fb"><a href="#"></a></li>
-          <li class="social-item twit"><a href="#"></a></li>
-          <li class="social-item gplus"><a href="#"></a></li>
-          <li class="social-item yelp"><a href="#"></a></li>
+          <li class="social-item fb"><a href="https://www.facebook.com/BelugaLabs/" target="_blank"></a></li>
+          <li class="social-item twit"><a href="https://twitter.com/belugalabs" target="_blank"></a></li>
+          <li class="social-item gplus"><a href="https://plus.google.com/105234390455784828244" target="_blank"></a></li>
+          <li class="social-item yelp"><a href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank"></a></li>
         </ul>
         <div class="copyright">
           <p class="copyright__text">Copyright © 2016 Beluga Labs. All Rights Reserved.</p>
@@ -332,8 +242,8 @@
       	map.setCenter(center); 
       });
       }
-      
     </script>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.min.js"></script>
     <script src="js/lib/lib.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

@@ -17,8 +17,95 @@
           <div class="cssload-cube cssload-c3"></div>
         </div>
       </div>
-      <canvas id="canvas"></canvas>
-      <h1 class="or">ЗАКАЖИ САЙТ СУКА</h1>
+      <div class="wrap">
+        <div class="hyp">
+          <div class="hyp">
+            <div class="hyp">
+              <div class="hyp">
+                <div class="hyp">
+                  <div class="hyp">
+                    <div class="hyp">
+                      <div class="hyp">
+                        <div class="hyp">
+                          <div class="hyp">
+                            <div class="hyp">
+                              <div class="hyp">
+                                <div class="hyp">
+                                  <div class="hyp">
+                                    <div class="hyp">
+                                      <div class="hyp"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="or">ЗАКАЖИ САЙТ, СУКА!<span>BelugaLabs, мы заботимся о Вас.</span></h1>
+      <style>
+        .or {
+        	position: absolute;
+        	top: 80%;
+        	text-align: center;width: 100%;
+        	left: 0;
+        }
+        .or span {
+        	display: block;
+        	font-size: 15px;
+        	font-weight: 300;
+        }
+        .wrap {
+        	position: absolute;
+        	top: calc(50vh - 222px);
+        	left: calc(50vw - 222px);
+        	transform: rotateZ(-45deg);
+        	width: 444px;
+        	height: 444px;
+        	overflow: hidden;
+        }
+        
+        div > .hyp {
+        	border-radius: 50%;
+        	border: 12px solid #000;
+        	border-color: #000 #000 transparent transparent;
+        	padding: 2px;
+        	width: 100%;
+        	height: 100%;
+        	box-sizing: border-box;
+        	animation: roll 15s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+        
+        div:empty {
+        padding: 0;
+        }
+        
+        @keyframes roll {
+        to {
+        transform: rotateZ(360deg);
+        }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </style>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhUVJJyQ6FBn5BZOi2zU2Dqz3OGeuJ37I&amp;callback=initMap"></script>
@@ -216,8 +303,8 @@
       	map.setCenter(center); 
       });
       }
-      
     </script>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.min.js"></script>
     <script src="js/lib/lib.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

@@ -1,0 +1,128 @@
+extends _layout
+block content
+	.main-menu__wrapper
+		.main-menu__inner.cf
+			.main-menu__control
+				a.main-menu__close(href="#")
+					span
+					span
+					span
+			img.menu__logo(src="img/menu-logo.png", alt="")
+			nav.main__nav
+				a.main__nav-item(href="/#services") Services
+				a.main__nav-item(href="portfolio.html") portfolio
+				a.main__nav-item(href="/#about") About Us
+				a.main__nav-item(href="/#team") Team
+				a.main__nav-item(href="/#contacts") Contact us
+	.page__header
+		.container
+			a.page__logo.animated(href="/")
+				img(src="img/menu-logo.png", alt="")
+			nav.page__menu.animated
+				a.page__menu-link(href="/#services") Services
+				a.page__menu-link(href="portfolio.html") Portfolio
+				a.page__menu-link(href="/#about") About Us
+				a.page__menu-link(href="/#team") Team
+				a.page__menu-link(href="/#contacts") Contact us
+	section.page__heading
+		img.page__bg(src="img/design-page-bg.jpg", alt="")
+		.container.cf
+			h1.page__title 
+				span.colored.animated OUR 
+				| BRANDING 
+				span.colored.animated SERVICES 
+			p.page__description.animated We provide a full range of branding and identity services as well as print marketing design. Brand recognition is the driving force behind successful businesses. Effective branding helps your customers establish a positive emotional connection with your company. We help you achieve those goals with our original and unique creative brand design services.
+			a.btn.btn--black.open-popup(href="#" data-open="big-popup") Read more
+	section.page__content
+		.tab.cf
+			.container
+				h2.tab__title.animated.wow.fadeInUp We develop modern & quality products, like....
+				ul.tabs__list.cf
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/branding-p1.png)")
+						.tabs__list-content
+							p.tabs__list-heading LOGOS
+							p.tabs__list-txt Every logo we produce is original, without the use of stock imagery or borrowed ideas. When your order a logo design from us you receive a comprehensive service that starts with an analysis of your preferences and a professional consultation. We create multiple sketches of your logo, refine them and select the best ones to show you. Based on your feedback we refine the prototypes until we achieve the final version. It’s an intensive process that requires creative ideas and a good understanding of the target market. Quality logo design is not easy, but the end result is a logo you will be proud of.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/branding-p2.png)")
+						.tabs__list-content
+							p.tabs__list-heading IDENTITY
+							p.tabs__list-txt We specialize in creating brand identity designs and a full range of promotional materials that your company may require. This includes: stationary, letterheads, business cards, greeting cards, promotional items such as pens, baseball caps and notepads, outdoor signs, vehicle graphics and decals and many more. We approach each of these packages individually with the client and provide our expert advice throughout the process. We can work with your existing logo or identity materials or create brand new ones from scratch. Complete flexibility and full satisfaction is guaranteed.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/branding-p3.png)")
+						.tabs__list-content
+							p.tabs__list-heading PRINT DESIGN
+							p.tabs__list-txt Is one of our core specialties and we provide a full range of design services for print marketing. We design full size banners, brochures, flyers, magazines, book covers, product labels, etc. If it can be printed we can design it. We work with any format and comply with any specific demands. We deliver our design in ANY requested format and make free adjustments whenever necessary. Our design team has many years of experience working in magazines and printing houses so the quality of our work is of the highest level. For examples of our recent print design work check out our portfolio.
+				.page__bottom.cf
+					.page__bottom-text.animated.wow.fadeInUp
+						p To receive a free, no obligation consultation for your project contact us today.<br>You will receive a professional evaluation and quote on the same day, guaranteed!
+					a.btn.btn--colored.open-popup.animated.wow.fadeInUp(href="#" data-open="big-popup") Read more
+	section.footer.cf
+		ul.social.cf
+			li.social-item.fb
+				a(href="https://www.facebook.com/BelugaLabs/" target="_blank")
+			li.social-item.twit
+				a(href="https://twitter.com/belugalabs" target="_blank")
+			li.social-item.gplus
+				a(href="https://plus.google.com/105234390455784828244" target="_blank")
+			li.social-item.yelp
+				a(href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank")
+		.copyright
+			p.copyright__text Copyright © 2016 Beluga Labs. All Rights Reserved.
+			p.address Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, 
+				a(href="#") BelugaLab.com
+	.popup#big-popup
+		span.close-popup
+		.thank
+			img.thank-logo(src="img/logo.png", alt="")
+			img.thank-img(src="img/thank.png", alt="")
+			p.thank-message We'll contact You shortly.
+		.popup__form-wrapper.hide-in-thank
+			p.popup__form-title Completely FREE No Obligation Analysis ...
+			form.popup__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				button.btn--colored.btn.send-btn Send
+		.popup-bg.hide-in-thank
+			img(src="img/popup.png", alt="")
+
+	.popup#small-popup
+		span.close-popup
+		.thank
+			img.thank-logo(src="img/logo.png", alt="")
+			img.thank-img(src="img/thank.png", alt="")
+			p.thank-message We'll contact You shortly.
+		.contacts__inner.hide-in-thank
+			img.footer-logo(src="img/footer-logo.png", alt="")
+			h2.contacts__title CONTACT US
+			form.contacts__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="tel" placeholder="Phone")
+					span.animated-border
+				.contacts__form-row
+					textarea.contacts__form-input.contacts__form-message(placeholder="Message")
+					span.animated-border
+				button.btn--black.btn.send-btn Send
+			p.call-us ... or just call us 
+					a(href="tel:1-855-823-5842") 1-855-823-5842
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

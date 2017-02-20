@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body class="loading">
+    <div class="all-wrapper">
+      <div class="loader">
+        <div class="cssload-thecube">
+          <div class="cssload-cube cssload-c1"></div>
+          <div class="cssload-cube cssload-c2"></div>
+          <div class="cssload-cube cssload-c4"></div>
+          <div class="cssload-cube cssload-c3"></div>
+        </div>
+      </div>
+      <div id="single-portfolio">
+        <section class="single-portfolio cf">
+          <div class="single-portfolio__content">
+            <div class="single-portfolio__top">
+              <div class="container">
+                <div class="single-portfolio__heading">
+                  <div class="single-portfolio__heading--col">
+                    <h2 class="single__title">{{title}}</h2>
+                    <p class="single__description">{{description}}</p><a :href="siteUrl" target="_blank" rel="nofollow" class="btn btn--colored">View Web Site</a>
+                  </div>
+                  <div class="single-portfolio__heading--col">
+                    <div v-html="fullTags" class="single__tags"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single__image"><img :src="fullImage" :alt="title"/></div>
+            <div class="single__thanks">
+              <p class="single__thanks-title">Thanks for watching</p><a href="#" data-open="small-popup" class="btn btn--colored open-popup">I want the same</a>
+            </div>
+          </div>
+        </section>
+        <section class="footer cf">
+          <ul class="social cf">
+            <li class="social-item fb"><a href="https://www.facebook.com/BelugaLabs/" target="_blank"></a></li>
+            <li class="social-item twit"><a href="https://twitter.com/belugalabs" target="_blank"></a></li>
+            <li class="social-item gplus"><a href="https://plus.google.com/105234390455784828244" target="_blank"></a></li>
+            <li class="social-item yelp"><a href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank"></a></li>
+          </ul>
+          <div class="copyright">
+            <p class="copyright__text">Copyright © 2016 Beluga Labs. All Rights Reserved.</p>
+            <p class="address">Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, <a href="#">BelugaLab.com</a></p>
+          </div>
+        </section>
+        <div id="small-popup" class="popup"><span class="close-popup"></span>
+          <div class="thank"><img src="img/logo.png" alt="" class="thank-logo"/><img src="img/thank.png" alt="" class="thank-img"/>
+            <p class="thank-message">We'll contact You shortly.</p>
+          </div>
+          <div class="contacts__inner hide-in-thank"><img src="img/footer-logo.png" alt="" class="footer-logo"/>
+            <h2 class="contacts__title">CONTACT US</h2>
+            <form class="contacts__form">
+              <div class="contacts__form-row">
+                <input type="text" placeholder="Name" class="contacts__form-input"/><span class="animated-border"></span>
+              </div>
+              <div class="contacts__form-row">
+                <input type="email" placeholder="Email" class="contacts__form-input"/><span class="animated-border"></span>
+              </div>
+              <div class="contacts__form-row">
+                <input type="tel" placeholder="Phone" class="contacts__form-input"/><span class="animated-border"></span>
+              </div>
+              <div class="contacts__form-row">
+                <textarea placeholder="Message" class="contacts__form-input contacts__form-message"></textarea><span class="animated-border"></span>
+              </div>
+              <input type="hidden" name="from" v-model="title"/>
+              <button class="btn--black btn send-btn">Send</button>
+            </form>
+            <p class="call-us">... or just call us <a href="tel:1-855-823-5842">1-855-823-5842</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhUVJJyQ6FBn5BZOi2zU2Dqz3OGeuJ37I&amp;callback=initMap"></script>
+    <script>
+      var map;
+      var styles = [
+          {
+              "featureType": "all",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                  {
+                      "saturation": 36
+                  },
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 40
+                  }
+              ]
+          },
+          {
+              "featureType": "all",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 16
+                  }
+              ]
+          },
+          {
+              "featureType": "all",
+              "elementType": "labels.icon",
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
+          },
+          {
+              "featureType": "administrative",
+              "elementType": "geometry.fill",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 20
+                  }
+              ]
+          },
+          {
+              "featureType": "administrative",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 17
+                  },
+                  {
+                      "weight": 1.2
+                  }
+              ]
+          },
+          {
+              "featureType": "landscape",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 20
+                  }
+              ]
+          },
+          {
+              "featureType": "poi",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 21
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "geometry.fill",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 17
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 29
+                  },
+                  {
+                      "weight": 0.2
+                  }
+              ]
+          },
+          {
+              "featureType": "road.arterial",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 18
+                  }
+              ]
+          },
+          {
+              "featureType": "road.local",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 16
+                  }
+              ]
+          },
+          {
+              "featureType": "transit",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 19
+                  }
+              ]
+          },
+          {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [
+                  {
+                      "color": "#000000"
+                  },
+                  {
+                      "lightness": 17
+                  }
+              ]
+          }
+      ]
+      var responsivePosition;
+      if($(window).width() > 670) {
+      	responsivePosition = "40.7446271,-73.99399569999997".split(',');
+      }else {
+      	responsivePosition = "40.7446271,-73.98771569999997".split(',');
+      }
+      function initMap() {
+      	map = new google.maps.Map(document.getElementById('map'), {
+      		zoom: 11,
+      		center: new google.maps.LatLng(responsivePosition[0], responsivePosition[1]),
+      		scrollwheel: false,
+      		styles: styles,
+      		disableDefaultUI: true
+      	});
+      	marker = new google.maps.Marker({
+      		map: map,
+      		position: new google.maps.LatLng(40.7446271, -73.98771569999997),
+      		icon: 'img/pin.png'
+      	});
+      	google.maps.event.addDomListener(window, "resize", function() {
+      	var center = map.getCenter();
+      	google.maps.event.trigger(map, "resize");
+      	map.setCenter(center); 
+      });
+      }
+    </script>
+    <script src="https://unpkg.com/vue@2.1.10/dist/vue.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

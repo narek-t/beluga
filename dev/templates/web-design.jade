@@ -1,0 +1,147 @@
+extends _layout
+block content
+	.main-menu__wrapper
+		.main-menu__inner.cf
+			.main-menu__control
+				a.main-menu__close(href="#")
+					span
+					span
+					span
+			img.menu__logo(src="img/menu-logo.png", alt="")
+			nav.main__nav
+				a.main__nav-item(href="/#services") Services
+				a.main__nav-item(href="portfolio.html") portfolio
+				a.main__nav-item(href="/#about") About Us
+				a.main__nav-item(href="/#team") Team
+				a.main__nav-item(href="/#contacts") Contact us
+	.page__header
+		.container
+			a.page__logo.animated(href="/")
+				img(src="img/menu-logo.png", alt="")
+			nav.page__menu.animated
+				a.page__menu-link(href="/#services") Services
+				a.page__menu-link(href="portfolio.html") Portfolio
+				a.page__menu-link(href="/#about") About Us
+				a.page__menu-link(href="/#team") Team
+				a.page__menu-link(href="/#contacts") Contact us
+	section.page__heading
+		img.page__bg(src="img/design-page-bg.jpg", alt="")
+		.container.cf
+			h1.page__title
+				span.colored.animated SUCCESS 
+				| OF YOUR BUSINESS 
+				br
+				| ONLINE 
+				span.colored.animated STARTS WITH 
+				| A<br>
+				span.colored.animated GREAT WEBSITE 
+			p.page__description.animated A great website is more than attractive graphics, great website is a smart investment that can help you bring new customers, sell more products, improve your existing client relations and many more goals that your business needs to achieve. We are a team of experienced conversion design experts that create websites that deliver proven results.  Your future online success starts here today.
+			a.btn.btn--black.open-popup(href="#" data-open="big-popup") Read more
+	section.page__content
+		.tab.cf
+			.container
+				h2.tab__title.animated.wow.fadeInUp We develop modern & quality products, like....
+				ul.tabs__list.cf
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/design-p1.png)")
+						.tabs__list-content
+							p.tabs__list-heading Custom Website Design
+							p.tabs__list-txt We deliver 100% complete solutions from concept to implementation and every website we produce is tailor made to client specifications. Every detail, every graphical accent is carefully thought out, planned and tested to achieve results.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/design-p2.png)")
+						.tabs__list-content
+							p.tabs__list-heading Website Redesign
+							p.tabs__list-txt This is our specialty service. We breathe new life into your existing website. From conversion optimization with new and improved design to a complete overhaul from scratch we will optimize your website to achieve its full potential
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/design-p3.png)")
+						.tabs__list-content
+							p.tabs__list-heading Landing Page Design
+							p.tabs__list-txt You only have seconds to grab your visitor’s attention, having an impactful landing page design can make or break the sale. We created 100’s of successful landing pages. Let our expertise get results for your marketing campaign
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/design-p4.png)")
+						.tabs__list-content
+							p.tabs__list-heading Responsive Design
+							p.tabs__list-txt Take full advantage of the growing mobile market with a website that will adapt to the device and browser it’s being viewed on. With a professional mobile layout you will expand your client base and improve your website usability.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/design-p5.png)")
+						.tabs__list-content
+							p.tabs__list-heading Ecommerce Design
+							p.tabs__list-txt The goal of every online store is to achieve maximum sales. We achieve that by improving user interface and optimizing the site with conversion best practices so the visitor spends less time navigating and more time actually shopping.
+					li.cf.tabs__list-item.tabs__list-item--third.animated.wow.fadeInUp
+						.tabs__list-icon(style="background-image: url(img/design-p6.png)")
+						.tabs__list-content
+							p.tabs__list-heading Conversion Optimization
+							p.tabs__list-txt True measure of success for any website is turning more visitors into clients. Every project we take on is built around improving this metric and our extensive background delivers results. The proof is in our reviews, and in our portfolio.
+				.page__bottom.cf
+					.page__bottom-text.animated.wow.fadeInUp
+						p To receive a free, no obligation consultation for your project contact us today.<br>You will receive a professional evaluation and quote on the same day, guaranteed!
+					a.btn.btn--colored.open-popup.animated.wow.fadeInUp(href="#" data-open="big-popup") Read more
+	section.footer.cf
+		ul.social.cf
+			li.social-item.fb
+				a(href="https://www.facebook.com/BelugaLabs/" target="_blank")
+			li.social-item.twit
+				a(href="https://twitter.com/belugalabs" target="_blank")
+			li.social-item.gplus
+				a(href="https://plus.google.com/105234390455784828244" target="_blank")
+			li.social-item.yelp
+				a(href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank")
+		.copyright
+			p.copyright__text Copyright © 2016 Beluga Labs. All Rights Reserved.
+			p.address Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, 
+				a(href="#") BelugaLab.com
+	.popup#big-popup
+		span.close-popup
+		.thank
+			img.thank-logo(src="img/logo.png", alt="")
+			img.thank-img(src="img/thank.png", alt="")
+			p.thank-message We'll contact You shortly.
+		.popup__form-wrapper.hide-in-thank
+			p.popup__form-title Completely FREE No Obligation Analysis ...
+			form.popup__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				button.btn--colored.btn.send-btn Send
+		.popup-bg.hide-in-thank
+			img(src="img/popup.png", alt="")
+
+	.popup#small-popup
+		span.close-popup
+		.thank
+			img.thank-logo(src="img/logo.png", alt="")
+			img.thank-img(src="img/thank.png", alt="")
+			p.thank-message We'll contact You shortly.
+		.contacts__inner.hide-in-thank
+			img.footer-logo(src="img/footer-logo.png", alt="")
+			h2.contacts__title CONTACT US
+			form.contacts__form
+				.contacts__form-row
+					input.contacts__form-input(type="text" placeholder="Name")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="email" placeholder="Email")
+					span.animated-border
+				.contacts__form-row
+					input.contacts__form-input(type="tel" placeholder="Phone")
+					span.animated-border
+				.contacts__form-row
+					textarea.contacts__form-input.contacts__form-message(placeholder="Message")
+					span.animated-border
+				button.btn--black.btn.send-btn Send
+			p.call-us ... or just call us 
+					a(href="tel:1-855-823-5842") 1-855-823-5842
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

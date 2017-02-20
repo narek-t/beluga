@@ -1,0 +1,77 @@
+extends _layout
+block content
+	#single-portfolio
+		section.single-portfolio.cf
+			.single-portfolio__content
+				.single-portfolio__top
+					.container
+						.single-portfolio__heading
+							.single-portfolio__heading--col
+								h2.single__title {{title}}
+								p.single__description {{description}}
+								a.btn.btn--colored(:href="siteUrl" target="_blank" rel="nofollow") View Web Site
+							.single-portfolio__heading--col
+								.single__tags(v-html="fullTags")
+				.single__image
+					img(:src="fullImage", :alt="title")
+				.single__thanks
+					p.single__thanks-title Thanks for watching
+					a.btn.btn--colored.open-popup(href="#" data-open="small-popup") I want the same
+
+		
+		section.footer.cf
+			ul.social.cf
+				li.social-item.fb
+					a(href="https://www.facebook.com/BelugaLabs/" target="_blank")
+				li.social-item.twit
+					a(href="https://twitter.com/belugalabs" target="_blank")
+				li.social-item.gplus
+					a(href="https://plus.google.com/105234390455784828244" target="_blank")
+				li.social-item.yelp
+					a(href="https://www.yelp.com/biz/beluga-labs-new-york" target="_blank")
+			.copyright
+				p.copyright__text Copyright © 2016 Beluga Labs. All Rights Reserved.
+				p.address Beluga Labs, 244 5th Avenue Suite 2642, New York, NY 10001, 1-855-823-5842, 
+					a(href="#") BelugaLab.com
+		.popup#small-popup
+			span.close-popup
+			.thank
+				img.thank-logo(src="img/logo.png", alt="")
+				img.thank-img(src="img/thank.png", alt="")
+				p.thank-message We'll contact You shortly.
+			.contacts__inner.hide-in-thank
+				img.footer-logo(src="img/footer-logo.png", alt="")
+				h2.contacts__title CONTACT US
+				form.contacts__form
+					.contacts__form-row
+						input.contacts__form-input(type="text" placeholder="Name")
+						span.animated-border
+					.contacts__form-row
+						input.contacts__form-input(type="email" placeholder="Email")
+						span.animated-border
+					.contacts__form-row
+						input.contacts__form-input(type="tel" placeholder="Phone")
+						span.animated-border
+					.contacts__form-row
+						textarea.contacts__form-input.contacts__form-message(placeholder="Message")
+						span.animated-border
+					input(type="hidden" name="from" v-model="title")
+					button.btn--black.btn.send-btn Send
+				p.call-us ... or just call us 
+					a(href="tel:1-855-823-5842") 1-855-823-5842
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

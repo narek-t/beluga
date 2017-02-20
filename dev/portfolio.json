@@ -1,0 +1,218 @@
+{
+	"pasokin": {
+		"thumb": "img/portfolio/thumbs/pasokin.jpg",
+		"fullImage": "img/portfolio/full/pasokin_present_v2.jpg",
+		"title": "PASOKIN",
+		"shortTags": "WordPress, eCommerce, Blog, Responsive, Animations, Design",
+		"fullTags": "<span>WordPress</span> <span>eCommerce</span> <span>Blog</span> <span>Responsive</span> <span>Animations</span> <span>Design</span>",
+		"description": "Unique marketing website with eCommerce functionality that was built for a US Candy manufacturer.<br>Website uses WordPress for the backend. It is fully responsive and has blogging functionality. It features custom graphics and intuitive UX/UI.",
+		"siteUrl": "http://pasokin.com/"
+	},
+	"kritsberg_property_group": {
+		"thumb": "img/portfolio/thumbs/kritsberg.jpg",
+		"fullImage": "img/portfolio/full/kritsberg_present_v2.jpg",
+		"title": "KRITSBERG PROPERTY GROUP",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Custom mobile friendly website built for one of the NYC's real estate investment companies. Lots of animated design elements. A unique way of presenting information on the completed projects & portfolio.",
+		"siteUrl": "http://kpropertygroup.com/"
+	},
+	"21sthapilos": {
+		"thumb": "img/portfolio/thumbs/21stHapilos.jpg",
+		"fullImage": "img/portfolio/full/21stHapilos_present_1.jpg",
+		"title": "21STHAPILOS",
+		"shortTags": "WordPress, Responsive",
+		"fullTags": "<span>WordPress</span> <span>Responsive</span>",
+		"description": "Developed high end website for music & video distributing. Fully responsive, W3C compliant layout. Cross browser compatibility. WordPress driven. Video and widget embedding.",
+		"siteUrl": "http://hapilos21.com/"
+	},
+	"pier_and_lev": {
+		"thumb": "img/portfolio/thumbs/pierlev.jpg",
+		"fullImage": "img/portfolio/full/pierandlev_present_v2.jpg",
+		"title": "PIER AND LEV",
+		"shortTags": "WordPress, Blog, Responsive, Animations, Design, UI/UX",
+		"fullTags": "<span>WordPress</span> <span>Blog</span> <span>Responsive</span> <span>Animations</span> <span>Design</span> <span>UI/UX</span>",
+		"description": "A high end marketing website built for manufacturer of exquisite handmade timepieces that incorporate cutting-edge technology, rare materials and state of the art construction. Horizontal scrolling animations. WordPress backend. Fully responsive layout. Cross browser compatibility.",
+		"siteUrl": "http://www.pierandlev.com/"
+	},
+	"cheese_studio": {
+		"thumb": "img/portfolio/thumbs/chezestudio.jpg",
+		"fullImage": "img/portfolio/full/cheese-studio_present.jpg",
+		"title": "CHEESE STUDIO",
+		"shortTags": "WordPress, Responsive, Graphic design, Blog",
+		"fullTags": "<span>WordPress</span> <span>Responsive</span> <span>Graphic design</span> <span>Blog</span>",
+		"description": "Luxury marketing website design for a European wedding studio. Video embedding, Strategically placed contact forms, custom graphics, blogging functionality. WordPress based website with a fully responsive layout and cross browser compatibility.",
+		"siteUrl": "http://cheese-studio.de/"
+	},
+	"chk-in_cam": {
+		"thumb": "img/portfolio/thumbs/chkcam.jpg",
+		"fullImage": "img/portfolio/full/Chk-In Cam_present.jpg",
+		"title": "CHK-IN CAM",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Website redesign <br />Custom website redesign project for a progressive company that specializes in home gadgets production. The website is built on the WordPress platform and features fully responsive layout, custom graphics, contact forms and more.",
+		"siteUrl": "https://chkincam.com/"
+	},
+	"lakewood_organic": {
+		"thumb": "img/portfolio/thumbs/lakewood.jpg",
+		"fullImage": "img/portfolio/full/lakewoodbasics_present.jpg",
+		"title": "LAKEWOOD ORGANIC",
+		"shortTags": "Design Development WordPress Responsive Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Website for a premier organic juices company. Website features store locator functionality, completely custom banners and graphics, multiple transition effects. Built on WordPress CMS with a fully responsive layout.",
+		"siteUrl": "http://lakewoodbasics.com/"
+	},
+	"anvilation": {
+		"thumb": "img/portfolio/thumbs/anvilnation.jpg",
+		"fullImage": "img/portfolio/full/anvilnation_present.jpg",
+		"title": "ANVILATION",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Design a new website for a hybrid social media / video production start up company. Website designed to have a vintage feel merged with the modern UI / UX. Created custom banners and icons and other custom design elements",
+		"siteUrl": "http://anvilnation.com/"
+	},
+	"casa_del_mar_luxury_villas": {
+		"thumb": "img/portfolio/thumbs/casadelmar.jpg",
+		"fullImage": "img/portfolio/full/Bahamas_Hotel_present.jpg",
+		"title": "CASA DEL MAR LUXURY VILLAS",
+		"shortTags": "Design Development WordPress Responsive Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Created a new website for a luxury resort in Bahamas. Design is based on a modern UI / UX methodology combining themes of both tropical location and luxury aesthetics. Integrated booking system built on a WordPress platform.",
+		"siteUrl": "http://exuma-casadelmar.com/"
+	},
+	"united_auto_rental": {
+		"thumb": "img/portfolio/thumbs/carrental.jpg",
+		"fullImage": "img/portfolio/full/United_Auto_Rental_present.jpg",
+		"title": "UNITED AUTO RENTAL",
+		"shortTags": "WordPress, Graphic design, Responsive, eCommerce",
+		"fullTags": "<span>WordPress</span> <span>Graphic design</span> <span>Responsive</span> <span>eCommerce</span>",
+		"description": "Cutting edge WordPress based website built for a Car Rental Company. Custom Calculators, Complex Rental options, Video embedding, Social Media options integration, Google Maps integration. Custom designed Graphic elements. Fully responsive layout. Payment options integration.",
+		"siteUrl": "https://unitedautorental.com/"
+	},
+	"aetherpal": {
+		"thumb": "img/portfolio/thumbs/aetherpal.jpg",
+		"fullImage": "img/portfolio/full/aetherpal_present.jpg",
+		"title": "AETHERPAL",
+		"shortTags": "Design, Development, WordPress, Responsive, Animation",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Animation</span>",
+		"description": "New custom website for a mobile support company. Website is built on a WordPress back end and included custom designed animations, CSS transitions, document downloads, news and management profiles. Website is fully responsive.",
+		"siteUrl": "http://aetherpal.com/"
+	},
+	"aka_media_inc": {
+		"thumb": "img/portfolio/thumbs/radio.jpg",
+		"fullImage": "img/portfolio/full/aka _media_present.jpg",
+		"title": "AKA MEDIA INC",
+		"shortTags": "Design Development WordPress Responsive Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Designed and developed a website for a Chicago based film Production Company with several custom forms, customizable project templates, video embedding, video portfolio, and various other sections. Built on WordPress with a fully responsive layout.",
+		"siteUrl": "https://www.akamediainc.com/"
+	},
+	"keys_bahamas_realty": {
+		"thumb": "img/portfolio/thumbs/bahama.jpg",
+		"fullImage": "img/portfolio/full/Keys-Bahamas_present.jpg",
+		"title": "KEYS BAHAMAS REALTY",
+		"shortTags": "WordPress, Responsive, Real estate",
+		"fullTags": "<span>WordPress</span> <span>Responsive</span> <span>Real estate</span>",
+		"description": "Designed and developed a cutting edge real estate website. WordPress driven. Multilingual. Fully responsive layout. MLS integration. Custom graphics.",
+		"siteUrl": "http://keysbahamas.com/"
+	},
+	"colony": {
+		"thumb": "img/portfolio/thumbs/colony.jpg",
+		"fullImage": "img/portfolio/full/colonyprojects_present.jpg",
+		"title": "COLONY",
+		"shortTags": "Development WordPress Responsive HTML5",
+		"fullTags": "<span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>HTML5</span>",
+		"description": "Developed a cutting edge website based on the newest video technology. Created a valid, cross browser compatible mark up with a responsive layout. The website is built on a WordPress platform and features HTML 5 video player that is viewable from any modern browser.",
+		"siteUrl": "http://colonyprojects.com/"
+	},
+	"down_n_dirty_hat": {
+		"thumb": "img/portfolio/thumbs/dirtyhats.jpg",
+		"fullImage": "img/portfolio/full/downndirtyhats_present_2.jpg",
+		"title": "DOWN N DIRTY HAT",
+		"shortTags": "WordPress, Responsive, eCcommerce",
+		"fullTags": "<span>WordPress</span> <span>Responsive</span> <span>eCcommerce</span>",
+		"description": "A trendy WordPress driven eShop built for America’s best conurty wetsren hats brand. Created a valid, cross browser compatible mark up with a responsive layout. Features robust ecommerce system.",
+		"siteUrl": "http://downndirtyhats.com/"
+	},
+	"glamerella_jewelry": {
+		"thumb": "img/portfolio/thumbs/glamerella.jpg",
+		"fullImage": "img/portfolio/full/glamerella_present.jpg",
+		"title": "GLAMERELLA JEWELRY",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom, eCommerce",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span> <span>eCommerce</span>",
+		"description": "Web Design for Fashion Jewelry Ecommerce Site <br /> Custom design and development of an amazing, highly versatile fashion jewelry ecommerce website. Website is built on a WordPress back end and features subtle CSS animations, custom check out system, social media feed integration and more. Website is fully responsive and cross browser compatible.",
+		"siteUrl": "http://www.necklaceholder.com/"
+	},
+	"kuafu_properties": {
+		"thumb": "img/portfolio/thumbs/kuafuproperties.jpg",
+		"fullImage": "img/portfolio/full/kuafuproperties_present.jpg",
+		"title": "KUAFU PROPERTIES",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Custom designed and developed corporate website for a real estate NYC development company. Website is built on WordPress with portfolio showcase, corporate management profiles. Website is responsive and multilingual (English and Chinese)",
+		"siteUrl": "http://kuafuproperties.com/"
+	},
+	"overpeck_corporate_park": {
+		"thumb": "img/portfolio/thumbs/overpeckcorporatepark.jpg",
+		"fullImage": "img/portfolio/full/overpeckcorporatepark_present.jpg",
+		"title": "OVERPECK CORPORATE PARK",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom, UI/UX",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span> <span>UI/UX</span>",
+		"description": "Cutting edge website created for a premier real estate management company. Unique user interface. WordPress backend. Fully responsive, W3C compliant layout.",
+		"siteUrl": "http://overpeckcorporatepark.com/"
+	},
+	"ygrene_energy": {
+		"thumb": "img/portfolio/thumbs/ecohome.jpg",
+		"fullImage": "img/portfolio/full/Ygrene_present.jpg",
+		"title": "YGRENE ENERGY",
+		"shortTags": "Design, Development, WordPress, Responsive, Custom",
+		"fullTags": "<span>Design</span> <span>Development</span> <span>WordPress</span> <span>Responsive</span> <span>Custom</span>",
+		"description": "Designed and developed a complex premium real estate website for one of the largest Moscow real estate agencies. Website contains property database integration and various search filters, custom maps, multi-tiered user admin, multi-language support and much more.",
+		"siteUrl": "https://ygreneworks.com/"
+	},
+	"chefit": {
+		"thumb": "img/portfolio/thumbs/Chef_It.jpg",
+		"fullImage": "img/portfolio/full/Chefit_Portfolio.jpg",
+		"title": "CHEFit",
+		"shortTags": "Graphic design, UI/UX design",
+		"fullTags": "<span>Graphic design</span> <span>UI/UX design</span>",
+		"description": "Unique, custom design created for a startup Meal prep. company. An 'All on one plate' type of design approach. Custom banners and graphics.",
+		"siteUrl": "#"
+	},
+	"biteaway": {
+		"thumb": "img/portfolio/thumbs/Biteaway.jpg",
+		"fullImage": "img/portfolio/full/biteaway_big.jpg",
+		"title": "Biteaway",
+		"shortTags": "WordPress, Responsive, Ecommerce",
+		"fullTags": "<span>WordPress</span> <span>Responsive</span> <span>Ecommerce</span>",
+		"description": "Beautiful, dental care product website. WordPress based. Valid, cross browser compatible mark up with a responsive layout. Custom subscriptions functionality. Video embedding.",
+		"siteUrl": "http://biteaway.com/"
+	},
+	"mythraeum": {
+		"thumb": "img/portfolio/thumbs/Mythraeum.jpg",
+		"fullImage": "img/portfolio/full/mythraeum_present.jpg",
+		"title": "Mythraeum",
+		"shortTags": "WordPress, Responsive, Blog",
+		"fullTags": "<span>WordPress</span> <span>Responsive</span> <span>Blog</span>",
+		"description": "An awesome Blogging website created based on client’s specifications for a successful author that specializes in modern Mythology. WordPress CMS. Fully responsive layout. Blog posts, photo galleries, feedback forms and much more.",
+		"siteUrl": "http://mythraeum.com/"
+	},
+	"BlakeGriggs": {
+		"thumb": "img/portfolio/thumbs/BlakeGriggs.jpg",
+		"fullImage": "img/portfolio/full/BG_present.jpg",
+		"title": "Blake & Griggs",
+		"shortTags": "WordPress, UI/UX, Blog, Responsive, Animations, Design",
+		"fullTags": "<span>WordPress</span> <span>Blog</span> <span>Responsive</span> <span>Animations</span> <span>Design</span> <span>UI/UX</span>",
+		"description": "Custom website for real estate investment company created in a full screen format with lots of animated design elements, parallax, and a fully responsive layout. Website uses WP as a backend",
+		"siteUrl": "http://blakegriggs.com/"
+	},
+	"cpr_to_the_rescue": {
+		"thumb": "img/portfolio/thumbs/CPR_To_The_Rescue.jpg",
+		"fullImage": "img/portfolio/full/cprtotherescue.jpg",
+		"title": "CPR To The Rescue",
+		"shortTags": "Design, Development, WordPress, Responsive, eCommerce , UI/UX",
+		"fullTags": "<span>WordPress</span> <span>eCommerce</span> <span>UI/UX</span> <span>Responsive</span> <span>Design</span> <span>Development</span>",
+		"description": "Custom eCommerce website for CPR training company that features custom class scheduling calendar functionality and user-controlled personal area, fully responsive layout, store of 1st aid supplies, blog and other custom functionality",
+		"siteUrl": "http://cprtotherescue.org/"
+	}
+}
